@@ -1,0 +1,23 @@
+@media (min-width:840px) {
+    .navbar {
+        width: 810px;
+    }
+}
+
+@media (min-width:992px) {
+    .navbar {
+        width: 940px;
+    }
+}
+
+@media (min-width:1024px) {
+    .navbar {
+        width: 1000px;
+    }
+}
+
+@media (min-width:1370) {
+    .navbar {
+        width: 1170px;
+    }
+}
