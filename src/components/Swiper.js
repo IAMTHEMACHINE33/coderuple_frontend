@@ -6,8 +6,10 @@ import { Autoplay, Navigation, Pagination } from "swiper";
 
 import 'swiper/css';
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import softwareDev from '../../public/Images/software-developer.png'
+import softwareDev from '@/Images/software-developer.png'
+import webdev from '@/Images/webdev.png'
 
 export default () => {
 
@@ -20,10 +22,12 @@ export default () => {
                 dynamicBullets: true,
                 clickable: true,
             }}
-            // autoplay={{
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // }}
+
+            loop={true}
+            autoplay={{
+                delay: 4500,
+                disableOnInteraction: false,
+            }}
             modules={[Pagination, Navigation, Autoplay]}
             navigation={true}
             onSlideChange={() => console.log('slide change')}
@@ -38,7 +42,7 @@ export default () => {
             </SwiperSlide>
             <SwiperSlide>
                 <Image
-                    src={softwareDev}
+                    src={webdev}
                     alt="Picture of the author"
                     className='h-screen'
                 />
