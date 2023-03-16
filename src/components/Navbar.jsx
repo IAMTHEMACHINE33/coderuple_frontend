@@ -46,25 +46,24 @@ const Navbar = () => {
     // <nav className="navbar__container">
     <nav className={navbar ? "navbar__container navbar__container__sticky" : "navbar__container navbar__container__absolute"}>
       <div className="navbar flex justify-between items-center w-full md:w-[720px] lg:w-[1000px] xl:w-[1000px] ">
-        <span className="font-semibold text-lg flex items-center gap-2">
+        <span className="font-semibold text-lg flex items-center gap-2 h-full py-4">
           <Image src={logo} height={30} />
           CODERUPLE
         </span>
         <Image src={menu} className="sm:hidden" />
         <div className="gap-4 hidden sm:flex">
-          <div class="popover__wrapper py-4">
+          <span className="py-3">Home</span>
+          <div class="popover__wrapper py-3">
             <a href="#">
-              <h2 class="popover__title">Hover:me</h2>
+              <h2 class="popover__title">Our Services</h2>
             </a>
             <div class="popover__content">
               <p class="popover__message">cHECHK</p>
             </div>
           </div>
-          <span className="py-4">Home</span>
-          <span className="py-4">Our Services</span>
-          <span className="py-4">Our Works</span>
-          <span className="py-4">Contact Us</span>
-          <span className="py-4">Careers</span>
+          <span className="py-3">Our Works</span>
+          <span className="py-3">Contact Us</span>
+          <span className="py-3">Careers</span>
         </div>
       </div>
     </nav>
