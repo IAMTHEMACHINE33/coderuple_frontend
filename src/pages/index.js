@@ -4,7 +4,10 @@ import Swiper from "../components/Swiper";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <div className="relative">
+        <Navbar />
+        <Swiper />
+      </div>
       <Swiper />
     </>
   )

@@ -1,3 +1,77 @@
+.popover__wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.popover__content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    /* left: -150px; */
+    top: 70px;
+    transform: translate(0, 10px);
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto;
+}
+
+.popover__content:before {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    right: calc(50% - 10px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.26));
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.popover__wrapper:hover .popover__content {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -20px);
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.popover__message {
+    text-align: center;
+}
+
+.navbar__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: padding-top .5s, background-color .5s;
+}
+
+.navbar__container__absolute {
+    position: absolute;
+}
+
+.navbar__container__sticky {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    top: 0;
+    transition: background-color .5s, padding-top .5s, padding-bottom.5s ease-out;
+    background-color: white;
+    color: black;
+    --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 @media (min-width:840px) {
     .navbar {
         width: 810px;
