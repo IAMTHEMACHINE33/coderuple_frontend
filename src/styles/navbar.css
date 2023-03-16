@@ -61,7 +61,7 @@
 
 .navbar__container__absolute {
     position: absolute;
-    color: black;
+    /* color: black; */
 }
 
 .navbar__container__sticky {
@@ -76,10 +76,19 @@
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.nav__links {
+    padding: 0.75rem 0 0.75rem 0;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.nav__links:hover {
+    color: var(--blue)
+}
+
 @media (min-width:640px) {
     .navbar__container {
         background-color: rgba(255, 255, 255, 0);
-        /* color: black; */
     }
 
     .navbar__container__absolute {

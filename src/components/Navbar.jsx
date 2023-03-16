@@ -52,18 +52,18 @@ const Navbar = () => {
         </span>
         <Image src={menu} className="sm:hidden" />
         <div className="gap-4 hidden sm:flex">
-          <span className="py-3">Home</span>
-          <div class="popover__wrapper py-3">
+          <span className="nav__links">Home</span>
+          <div class="popover__wrapper">
             <a href="#">
-              <h2 class="popover__title">Our Services</h2>
+              <h2 class="popover__title nav__links">Our Services</h2>
             </a>
             <div class="popover__content">
               <p class="popover__message">cHECHK</p>
             </div>
           </div>
-          <span className="py-3">Our Works</span>
-          <span className="py-3">Contact Us</span>
-          <span className="py-3">Careers</span>
+          <span className="nav__links">Our Works</span>
+          <span className="nav__links">Contact Us</span>
+          <span className="nav__links">Careers</span>
         </div>
       </div>
     </nav>
