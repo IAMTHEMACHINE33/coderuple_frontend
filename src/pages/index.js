@@ -1,3 +1,4 @@
+import Services from "@/components/Services/Services";
 import Navbar from "../components/Navbar";
 import Swiper from "../components/Swiper";
 
@@ -9,6 +10,7 @@ export default function Home() {
         <Swiper />
       </div>
       <Swiper />
+      <Services />
     </>
   )
 }
