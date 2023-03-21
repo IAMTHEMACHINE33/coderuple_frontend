@@ -2,6 +2,7 @@ import Services from "@/components/Services/Services";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Navbar from "../components/Navbar";
 import Swiper from "../components/Swiper";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="relative">
         <Services />
         <Testimonials />
+        <Footer/>
       </div>
     </>
   )
