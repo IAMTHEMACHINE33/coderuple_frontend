@@ -12,7 +12,7 @@ export default function Home() {
       </div>
       <div className="relative">
         <Services />
-        <Testimonials />
+        {/* <Testimonials /> */}
       </div>
     </>
   )
