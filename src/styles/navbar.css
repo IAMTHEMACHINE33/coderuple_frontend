@@ -98,25 +98,25 @@
 }
 
 @media (min-width:840px) {
-    .navbar {
+    .responsive-container {
         width: 810px;
     }
 }
 
 @media (min-width:992px) {
-    .navbar {
+    .responsive-container {
         width: 940px;
     }
 }
 
 @media (min-width:1024px) {
-    .navbar {
+    .responsive-container {
         width: 1000px;
     }
 }
 
 @media (min-width:1370) {
-    .navbar {
+    .responsive-container {
         width: 1170px;
     }
 }
