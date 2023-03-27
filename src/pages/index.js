@@ -1,3 +1,5 @@
+import AboutUs from "@/components/AboutUs/AboutUs";
+import ContactUs from "@/components/ContactUs/ContactUs";
 import Services from "@/components/Services/Services";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Navbar from "../components/Navbar";
@@ -12,6 +14,8 @@ export default function Home() {
       </div>
       <div className="relative">
         <Services />
+        <AboutUs />
+        <ContactUs />
         {/* <Testimonials /> */}
       </div>
     </>
