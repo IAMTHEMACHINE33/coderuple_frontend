@@ -96,27 +96,3 @@
         color: white;
     }
 }
-
-@media (min-width:840px) {
-    .responsive-container {
-        width: 810px;
-    }
-}
-
-@media (min-width:992px) {
-    .responsive-container {
-        width: 940px;
-    }
-}
-
-@media (min-width:1024px) {
-    .responsive-container {
-        width: 1000px;
-    }
-}
-
-@media (min-width:1370) {
-    .responsive-container {
-        width: 1170px;
-    }
-}
