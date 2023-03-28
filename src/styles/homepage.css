@@ -1,0 +1,9 @@
+.services-card {
+    transform: translateY(+100px);
+    transition: transform ease 1s, --tw-shadow ease 0.5s, --tw-shadow-colored ease 0.5s, box-shadow ease 0.5s;
+
+}
+
+.services-card-up {
+    transform: translateY(0);
+}

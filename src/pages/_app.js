@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import '../styles/navbar.css'
 import '../styles/testimonial.scss'
+import '../styles/homepage.css'
 import { Open_Sans } from '@next/font/google'
 import { useEffect } from 'react'
 

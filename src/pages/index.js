@@ -15,7 +15,7 @@ export default function Home() {
       <div className="relative">
         <Services />
         <AboutUs />
-        <ContactUs />
+        {/* <ContactUs /> */}
         {/* <Testimonials /> */}
       </div>
     </>
