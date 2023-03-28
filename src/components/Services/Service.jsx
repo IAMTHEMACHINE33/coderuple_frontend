@@ -3,13 +3,13 @@ import smartphone from "./smartphone.svg"
 
 const Service = () => {
     return (
-        <div className="w-1/3 flex flex-col justify-center items-center gap-8">
-            <h3 className="text-2xl w-60 font-bold">Mobile App Development</h3>
-            <div className="bg-white inline-flex p-8 rounded-full w-[8rem] h-[8rem] justify-center items-center shadow-lg">
+        <div className="w-full flex flex-col justify-center items-center gap-8 hover:shadow-[0_0_35px_rgba(0,0,0,0.25)] ease-in-out duration-300 p-6 rounded-2xl">
+            <h3 className="text-xl w-60 font-bold">Mobile App Development</h3>
+            <div className="bg-white inline-flex p-8 rounded-full w-[8rem] h-[8rem] justify-center items-center shadow-lg hover:shadow-xl transition  ease-in-out duration-250">
                 <Image src={smartphone} className="text-[#112A46] fill-current w-full" />
             </div>
-            <p className="text-2xl ">
-                We design experiences that are personalized to your users’ context and motivations. We use design thinking and prototyping because we believe that products evolve for the better through triangulation, iteration and feedback. This leads to designs that are useful and long-lasting.
+            <p className="text-xl ">
+                We design experiences that are personalized to your users’ context and motivations.
             </p>
         </div>
     )
