@@ -1,5 +1,6 @@
 :root {
     --blue: #6096bA;
+    --dark_gray: #1e1e1e;
 }
 
 body {
@@ -52,6 +53,10 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+html {
+    color: var(--dark_gray);
 }
 
 @tailwind base;
