@@ -5,7 +5,7 @@ import wave from "./blue_wave.png"
 
 const Services = () => {
     return (
-        <div className="bg-[#E7E9F0] text-[#112A46] relative py-20  flex flex-col gap-8 text-center ">
+        <div className="bg-[#E7E9F0] relative py-20  flex flex-col gap-8 text-center ">
             {/* <Image src={wave} className="absolute top-0 z-[-10px] h-[42rem] w-[3000px\9] max-w-full" /> */}
             <Image src={wave} className="absolute top-0 z-[-10px]  h-[500px] w-full lg:h-[650px] object-cover md:object-fill m-auto" />
             <div className="flex flex-col gap-24 z-20 items-center mx-4 ">
