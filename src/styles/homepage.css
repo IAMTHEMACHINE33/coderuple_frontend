@@ -9,3 +9,48 @@
     transform: translateY(0);
     opacity: 1;
 }
+
+.about-us-animate-from-right {
+    transform: translateX(-200px);
+    animation: leftToRightAnimation ease 1s;
+}
+
+
+.about-us-animate-from-left {
+    transform: translateX(+200px);
+
+    animation: rightToLeftAnimation ease 1s;
+}
+
+.about-us-animate-center {
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: translateX(0);
+    transition: transform ease 1s, opacity ease .5s, --tw-shadow ease 0.5s, --tw-shadow-colored ease 0.5s, box-shadow ease 0.5s;
+
+}
+
+
+@keyframes rightToLeftAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes leftToRightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
