@@ -9,7 +9,7 @@ const Service = () => {
                 <Image src={smartphone} className="text-[#112A46] fill-current w-full" />
             </div>
             <p className="text-xl ">
-                We design experiences that are personalized to your users’ context and motivations.
+            At our company, we collaborate as a team to bring our clients' unique web application design ideas to life. Our goal is to deliver a customised solution that meets their needs and exceeds their expectations.
             </p>
         </div>
     )

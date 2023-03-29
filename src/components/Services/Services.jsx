@@ -29,7 +29,7 @@ const Services = () => {
             <Image src={wave} className="absolute top-0 z-[-10px]  h-[500px] w-full lg:h-[650px] object-cover md:object-fill m-auto" />
             <div className="flex flex-col gap-24 z-20 items-center mx-4 ">
                 <HomePageHeader text="Services" />
-                <p className=" text-xl font-bold text-justify responsive-container">We believe that modern innovation is an iterative journey, not a destination.
+                <p className=" text-xl font-bold text-center responsive-container">We believe that modern innovation is an iterative journey, not a destination.
                     We’ve found that successful journeys require a seamless blend of four key ingredients.
                 </p>
                 <div className="flex justify-between items-center flex-col lg:flex-row responsive-container">
