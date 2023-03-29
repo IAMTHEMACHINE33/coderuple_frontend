@@ -13,7 +13,7 @@ const Navbar = () => {
 
   //navbar scroll changeBackground function
   const changeBackground = () => {
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
     if (window.scrollY >= 40) {
       setNavbar(true)
     } else {
