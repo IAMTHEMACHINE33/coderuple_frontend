@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     // <nav className="navbar__container">
     <nav className={navbar ? "navbar__container navbar__container__sticky" : "navbar__container navbar__container__absolute"}>
-      <div className="responsive-container flex justify-between items-center w-full md:w-[720px] lg:w-[1000px] xl:w-[1000px] ">
+      <div className="responsive-container flex justify-between items-center ">
         <span className="font-semibold text-lg flex items-center gap-2 h-full py-4">
           <Image src={logo} height={30} />
           CODERUPLE

@@ -50,7 +50,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0rem 1rem 0rem 1rem;
     z-index: 50;
     background-color: white;
     padding-top: 5px;
@@ -84,6 +83,10 @@
 
 .nav__links:hover {
     color: var(--blue)
+}
+
+body {
+    color: #112A46;
 }
 
 @media (min-width:640px) {
