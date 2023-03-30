@@ -100,33 +100,18 @@ const Navbar = () => {
           <ul
             class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
             data-te-navbar-nav-ref>
-            <li class="lg:px-2" data-te-nav-item-ref>
-              <a
-                class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                aria-current="page"
-                href="#"
-                data-te-nav-link-ref
-              >Home</a>
-            </li>
-            <li class="lg:pr-2" data-te-nav-item-ref>
-              <a
-                class="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                href="#"
-                data-te-nav-link-ref
-              >Features</a>
-            </li>
-            <li class="lg:pr-2" data-te-nav-item-ref>
-              <a
-                class="p-0 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                href="#"
-                data-te-nav-link-ref
-              >Pricing</a>
-            </li>
-            <li class="lg:pr-2" data-te-nav-link-ref>
-              <a
-                class="text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-              >Disabled</a>
-            </li>
+            <span className="nav__links">Home</span>
+            <div class="popover__wrapper">
+              <a href="#">
+                <h2 class="popover__title nav__links">Our Services</h2>
+              </a>
+              <div class="popover__content">
+                <p class="popover__message">cHECHK</p>
+              </div>
+            </div>
+            <span className="nav__links">Our Works</span>
+            <span className="nav__links">Contact Us</span>
+            <span className="nav__links">Careers</span>
           </ul>
         </div>
       </div>
