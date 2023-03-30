@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bottom-0 mt-52 p-5 left-0 z-20 w-full bg-white  md:flex md:items-center md:justify-between md:p-6">
+    <footer className=" md:mt-72 bottom-0 p-5 left-0 z-20 w-full bg-white  md:flex md:items-center md:justify-between md:p-6">
       <span className="grid grid-rows-3 grid-flow-col p-5 gap-0.5 justify-center text-center lg:ml-20">
         <div className="text-4xl italic">Coderuple</div>
         <div className="text-xs">Where business blooms!</div>
