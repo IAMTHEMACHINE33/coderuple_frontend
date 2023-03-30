@@ -67,13 +67,17 @@ const Navbar = () => {
     //   </div>
     // </nav>
     <nav
-      class="relative flex w-full flex-nowrap items-center justify-between bg-neutral-100 py-4 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 lg:flex-wrap lg:justify-start"
+      className={navbar ? "navbar__container navbar__container__sticky" : "navbar__container navbar__container__absolute"}
       data-te-navbar-ref>
-      <div class="flex w-full flex-wrap items-center justify-between px-6">
+      <div class="flex responsive-container flex-wrap items-center justify-between ">
 
-        <a class="text-xl text-black" href="#">Navbar</a>
+        <span className="font-semibold text-lg flex items-center gap-2 h-full py-4">
+          <Image src={logo} height={30} />
+          CODERUPLE
+        </span>
+
         <button
-          class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 lg:hidden"
+          class="block border-0 bg-transparent sm:hidden"
           type="button"
           data-te-collapse-init
           data-te-target="#navbarSupportedContent3"
@@ -93,12 +97,13 @@ const Navbar = () => {
             </svg>
           </span>
         </button>
+
         <div
-          class="!visible hidden basis-[100%] items-center lg:!flex lg:basis-auto"
+          class="!visible hidden basis-[100%] items-center sm:!flex sm:basis-auto"
           id="navbarSupportedContent3"
           data-te-collapse-item>
           <ul
-            class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
+            class="list-style-none mr-auto flex sm:gap-4 flex-col pl-0 sm:flex-row"
             data-te-navbar-nav-ref>
             <span className="nav__links">Home</span>
             <div class="popover__wrapper">
