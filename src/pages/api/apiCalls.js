@@ -8,3 +8,9 @@ export async function aboutUsApi(props) {
         .then(res => { props?.setAboutUs(res) })
         .catch(err => console.log(err))
 }
+export async function servicesApi(props) {
+    console.log(props)
+    await publicRequest.get("service/get/")
+        .then(res => { props?.setServices(res) })
+        .catch(err => console.log(err))
+}

@@ -2,9 +2,17 @@ import Image from "next/image"
 import HomePageHeader from "../UI/HomePageHeader"
 import Service from "./Service"
 import wave from "./blue_wave.png"
+import { useEffect, useState } from "react";
+import { servicesApi } from "@/pages/api/apiCalls";
 
 const Services = () => {
     let timer = 0
+    const [services, setServices] = useState();
+
+    useEffect(() => {
+        servicesApi({ setServices })
+    }, []);
+    console.log("services", services?.data?.data[1].feature)
     if (process.browser) {
         window.addEventListener('load', (event) => {
             let intersectionObserver = new IntersectionObserver(entries => {
@@ -29,13 +37,15 @@ const Services = () => {
             <Image src={wave} className="absolute top-0 z-[-10px]  h-[500px] w-full lg:h-[650px] object-cover md:object-fill m-auto" />
             <div className="flex flex-col gap-24 z-20 items-center mx-4 ">
                 <HomePageHeader text="Services" />
-                <p className=" text-xl font-bold text-center responsive-container">We believe that modern innovation is an iterative journey, not a destination.
-                    We’ve found that successful journeys require a seamless blend of four key ingredients.
+                <p className=" text-xl font-bold text-center responsive-container">
+                    {services?.data?.data[1]?.paragraph}
                 </p>
                 <div className="flex justify-between items-center flex-col lg:flex-row responsive-container">
-                    <Service />
-                    <Service />
-                    <Service />
+                    {
+                        services?.data?.data[1].feature.map(feature => {
+                            return <Service feature={feature} />
+                        })
+                    }
                 </div>
             </div>
         </div>
