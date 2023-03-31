@@ -14,3 +14,9 @@ export async function servicesApi(props) {
         .then(res => { props?.setServices(res) })
         .catch(err => console.log(err))
 }
+export async function postContactUsApi(props) {
+    console.log(props)
+    await publicRequest.post("inquiry/add/", props?.data)
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+}

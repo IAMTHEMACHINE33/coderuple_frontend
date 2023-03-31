@@ -1,13 +1,31 @@
+import { postContactUsApi } from "@/pages/api/apiCalls";
+import { useForm } from "react-hook-form";
+
 const ContactUsForm = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors }
+  } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+    postContactUsApi(data)
+  }; // your form submit function which will invoke after successful validation
+
+  console.log(watch("example")); // you can watch individual input by pass the name of the input
+
+
   return (
     <div class="block xs:w-max rounded-lg bg-white p-6 shadow-lg">
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div class="relative mb-6 w-80" data-te-input-wrapper-init="">
           <input
             type="text"
             class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-dark dark:placeholder:text-neutral-200 [&amp;:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
             id="exampleInput7"
             placeholder="Name"
+            {...register("fullname", { required: true })}
           />
           <label
             for="exampleInput7"
@@ -33,6 +51,7 @@ const ContactUsForm = () => {
             ></div>
           </div>
         </div>
+        {errors.fullname?.type === 'required' && <p role="alert">Name is required</p>}
 
         <div class="relative mb-6" data-te-input-wrapper-init>
           <input
@@ -40,6 +59,7 @@ const ContactUsForm = () => {
             class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
             id="exampleInput8"
             placeholder="Email address"
+            {...register("email", { required: true })}
           />
           <label
             for="exampleInput8"
@@ -48,12 +68,15 @@ const ContactUsForm = () => {
             Email address
           </label>
         </div>
+        {errors.email?.type === 'required' && <p role="alert">Email is required</p>}
+
         <div class="relative mb-6" data-te-input-wrapper-init>
           <textarea
             class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-black dark:placeholder:text-black [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
             id="exampleFormControlTextarea13"
             rows="3"
             placeholder="Message"
+            {...register("message", { required: true })}
           ></textarea>
           <label
             for="exampleFormControlTextarea13"
