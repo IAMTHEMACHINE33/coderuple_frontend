@@ -2,15 +2,11 @@ import { postContactUsApi } from "@/pages/api/apiCalls";
 import { useForm } from "react-hook-form";
 
 const ContactUsForm = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors }
-  } = useForm();
+  const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
+
   const onSubmit = (data) => {
     console.log(data);
-    postContactUsApi(data)
+    postContactUsApi(data, reset())
   }; // your form submit function which will invoke after successful validation
 
   console.log(watch("example")); // you can watch individual input by pass the name of the input
