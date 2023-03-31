@@ -26,6 +26,7 @@ export async function postContactUsApi(props) {
                     'success'
                 )
             }
+            props.setSubmitting(false)
             props.reset();
         })
         .catch(err => console.log(err))
