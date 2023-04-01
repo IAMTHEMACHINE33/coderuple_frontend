@@ -103,20 +103,13 @@ const Navbar = () => {
           id="navbarSupportedContent3"
           data-te-collapse-item>
           <ul
-            class="list-style-none mr-auto flex sm:gap-4 flex-col pl-0 sm:flex-row"
+            class="flex sm:gap-4 flex-col sm:flex-row"
             data-te-navbar-nav-ref>
-            <span className="nav__links">Home</span>
-            <div class="popover__wrapper">
-              <a href="#">
-                <h2 class="popover__title nav__links">Our Services</h2>
-              </a>
-              <div class="popover__content">
-                <p class="popover__message">cHECHK</p>
-              </div>
-            </div>
-            <span className="nav__links">Our Works</span>
-            <span className="nav__links">Contact Us</span>
-            <span className="nav__links">Careers</span>
+            <p className="nav__links"><a className=" underline">Home</a></p>
+            <p className="nav__links"><a className=" underline">Our Services</a></p>
+            <p className="nav__links"><a className=" underline">Our Works</a></p>
+            <p className="nav__links"><a className=" underline">Contact Us</a></p>
+            <p className="nav__links"><a className=" underline">Careers</a></p>
           </ul>
         </div>
       </div>
