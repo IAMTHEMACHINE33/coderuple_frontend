@@ -1,6 +1,5 @@
-import HomePageHeader from "./UI/HomePageHeader";
 import BannerTop from "../Images/bannertop.png";
-import BannerBottom from "../Images/bannerbottom.png";
+
 import Image from "next/image";
 const Banner = () => {
   return (
@@ -15,9 +14,8 @@ const Banner = () => {
             Delivering IT solutions that enable you to work smarter
           </p>
         </div>
-        <Image src={BannerTop} className="absolute bottom-0 "></Image>
+        <Image src={BannerTop} className="absolute bottom-0  w-screen"></Image>
       </div>
-      <Image src={BannerBottom} className="relative top-0"></Image>
     </>
   );
 };
