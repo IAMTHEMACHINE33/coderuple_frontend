@@ -1,10 +1,9 @@
-import AboutUs from "@/components/AboutUs/AboutUs";
-import ContactUs from "@/components/ContactUs/ContactUs";
-import Services from "@/components/Services/Services";
-import Testimonials from "@/components/Testimonials/Testimonials";
+import Swiper from "@/components/Swiper";
 import Navbar from "../components/Navbar";
-import Swiper from "../components/Swiper";
-import Footer from "../components/Footer";
+import Services from "@/components/HomePageComponents/Services/Services";
+import AboutUs from "@/components/HomePageComponents/AboutUs/AboutUs";
+import ContactUs from "@/components/HomePageComponents/ContactUs/ContactUs";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

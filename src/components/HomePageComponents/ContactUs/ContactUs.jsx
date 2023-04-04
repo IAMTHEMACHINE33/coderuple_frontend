@@ -1,8 +1,8 @@
 import Image from "next/image";
-import HomePageHeader from "../UI/HomePageHeader";
 import blue_wave from "./blue_wave_up_down.png";
 import ContactUsForm from "./ContactUsForm";
 import ContactUsInfo from "./ContactUsInfo";
+import HomePageHeader from "@/components/UI/HomePageHeader";
 
 const ContactUs = () => {
   return (

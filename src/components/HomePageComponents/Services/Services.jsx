@@ -1,9 +1,9 @@
 import Image from "next/image"
-import HomePageHeader from "../UI/HomePageHeader"
 import Service from "./Service"
 import wave from "./blue_wave.png"
 import { useEffect, useState } from "react";
 import { servicesApi } from "@/pages/api/apiCalls";
+import HomePageHeader from "@/components/UI/HomePageHeader";
 
 const Services = () => {
     let timer = 0
