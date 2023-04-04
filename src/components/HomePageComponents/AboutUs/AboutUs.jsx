@@ -1,9 +1,9 @@
 import Image from "next/image"
-import HomePageHeader from "../UI/HomePageHeader"
 import AboutUsInfo from "./AboutUsInfo"
 import wave_gray from "./grey_wave_2.png"
 import { useEffect, useState } from "react";
 import { aboutUsApi } from "@/pages/api/apiCalls";
+import HomePageHeader from "@/components/UI/HomePageHeader";
 
 const AboutUs = () => {
     const [aboutUs, setAboutUs] = useState();
