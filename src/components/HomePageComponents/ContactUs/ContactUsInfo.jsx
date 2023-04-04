@@ -1,10 +1,10 @@
 const ContactUsInfo = () => {
   return (
-    <div className=" grid grid-col gap-10 my-20 mx-10 md:mx-20 w-1/2 md:justify-items-start sm:justify-items-center ">
+    <div className=" grid grid-col w-1/2 gap-10 mb-10 justify-center  md:mx-20 md:justify-items-start sm:justify-items-start ">
       <div>
         {/*  talako paragraph le laang haniracha */}
         <p className="font-bold text-3xl ">Let’s Work Together!</p>
-        <p className=" mt-3">
+        <p className="mt-3">
           Please tell us a bit about you, your project, and how best to reach
           you. We’ll get right back to you.
         </p>
