@@ -4,7 +4,7 @@ import AdminSideNav from "./AdminSideNav"
 const AdminContainer = (props) => {
     return (
         <section
-            class="relative flex items-start justify-start  border bg-gray-50  ">
+            class="relative flex items-start justify-start">
             <AdminSideNav />
             <AdminNavbar />
             <main className="mt-12 xl:ml-60 w-full">
