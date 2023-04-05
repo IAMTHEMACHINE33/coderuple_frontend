@@ -2,7 +2,7 @@ const AdminNavbar = () => {
     return (
         <nav
             id="main-navbar"
-            class="fixed top-0 right-0 left-0 flex w-full flex-nowrap items-center justify-between bg-white py-[0.6rem] text-gray-500 shadow-lg hover:text-gray-700 focus:text-gray-700 dark:bg-zinc-700 lg:flex-wrap lg:justify-start xl:pl-60"
+            class="h-12 fixed top-0 right-0 left-0 flex w-full flex-nowrap items-center justify-between bg-white py-[0.6rem] text-gray-500 shadow-lg hover:text-gray-700 focus:text-gray-700 dark:bg-zinc-700 lg:flex-wrap lg:justify-start xl:pl-60"
             data-te-navbar-ref>
             <div
                 class="flex w-full flex-wrap items-center justify-between px-4 xl:justify-end">

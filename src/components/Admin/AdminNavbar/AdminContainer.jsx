@@ -7,8 +7,8 @@ const AdminContainer = (props) => {
             class="relative flex items-start justify-start  border bg-gray-50  ">
             <AdminSideNav />
             <AdminNavbar />
-            <main className="mt-14 xl:ml-60">
-                <div class="container m-4">
+            <main className="mt-12 xl:ml-60 w-full">
+                <div class="container p-4">
                     {props.children}
                 </div>
             </main>
