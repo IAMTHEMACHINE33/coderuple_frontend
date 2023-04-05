@@ -8,7 +8,7 @@ const AdminContainer = (props) => {
             <AdminSideNav />
             <AdminNavbar />
             <main className="mt-12 xl:ml-60 w-full">
-                <div class="container p-4">
+                <div class="p-4">
                     {props.children}
                 </div>
             </main>
