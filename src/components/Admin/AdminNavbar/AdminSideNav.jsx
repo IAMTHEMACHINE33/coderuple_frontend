@@ -1,4 +1,7 @@
+import Image from "next/image"
 import AdminLinks from "./Link/AdminLinks"
+
+import logo from "@/Images/logo.png"
 
 const AdminSideNav = () => {
     return (
@@ -12,17 +15,17 @@ const AdminSideNav = () => {
             data-te-sidenav-content="#content"
             data-te-sidenav-accordion="true">
             <a
-                class="mb-3 flex items-center justify-center py-6 outline-none"
+                class="flex items-center justify-start px-6 my-6 outline-none"
                 href="#!"
                 data-te-ripple-init
                 data-te-ripple-color="primary">
-                <img
+                <Image
+                    src={logo}
                     id="te-logo"
                     class="mr-2 w-8"
-                    src="https://tailwind-elements.com/img/logo.png"
                     alt="TE Logo"
                     draggable="false" />
-                <span>Tailwind Elements</span>
+                <span className="text-gray-300 font-bold">CODERUPLE</span>
             </a>
 
             <AdminLinks />
