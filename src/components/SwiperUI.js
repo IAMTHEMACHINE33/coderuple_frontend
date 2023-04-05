@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import softwareDev from '@/Images/software-developer.png'
 import webdev from '@/Images/webdev.png'
 
-export default () => {
+const SwiperUI = () => {
 
 
     return (
@@ -30,8 +30,8 @@ export default () => {
             }}
             modules={[Pagination, Navigation, Autoplay]}
             navigation={true}
-            // onSlideChange={() => console.log('slide change')}
-            // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
         >
             <SwiperSlide>
                 <Image
@@ -50,3 +50,5 @@ export default () => {
         </Swiper>
     );
 };
+
+export default SwiperUI 

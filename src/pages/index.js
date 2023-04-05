@@ -1,4 +1,4 @@
-import Swiper from "@/components/Swiper";
+import SwiperUI from "@/components/SwiperUI";
 import Navbar from "../components/Navbar";
 import Services from "@/components/HomePageComponents/Services/Services";
 import AboutUs from "@/components/HomePageComponents/AboutUs/AboutUs";
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <div className="relative">
         <Navbar />
-        <Swiper />
+        <SwiperUI />
       </div>
       <div className="relative">
         <Services />
