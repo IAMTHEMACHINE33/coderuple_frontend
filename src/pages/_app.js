@@ -15,6 +15,14 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     const use = async () => {
       (await import('tw-elements')).default;
+      // document
+      //   .getElementById("slim-toggler")
+      //   .addEventListener("click", () => {
+      //     const instance = te.Sidenav.getInstance(
+      //       document.getElementById("sidenav-4")
+      //     );
+      //     instance.toggleSlim();
+      //   });
     };
     use();
   }, []);

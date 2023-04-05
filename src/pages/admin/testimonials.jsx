@@ -1,6 +1,10 @@
+const { default: AdminSideNavContainer } = require("@/components/Admin/AdminNavbar/AdminContainer")
+
 const testimonials = () => {
   return (
-    <div>testimonials</div>
+    <AdminSideNavContainer>
+      <div>testimonials</div>
+    </AdminSideNavContainer>
   )
 }
 

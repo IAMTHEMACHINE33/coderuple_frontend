@@ -1,12 +1,26 @@
-import AdminSideNavContainer from '@/components/Admin/AdminNavbar/AdminSideNavContainer'
+import AdminContainer from "@/components/Admin/AdminNavbar/AdminContainer"
 
 const index = () => {
     return (
-        <AdminSideNavContainer>
-            <span>123</span>
-            <span>123</span>
-            <span>123</span>
-        </AdminSideNavContainer>
+        <AdminContainer>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+            <div className="bg-black h-28">index</div>
+        </AdminContainer>
     )
 }
 
