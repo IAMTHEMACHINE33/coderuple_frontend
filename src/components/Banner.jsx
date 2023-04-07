@@ -10,7 +10,7 @@ const Banner = () => {
             About us
           </p>
 
-          <p className="text-md font-semibold text-white">
+          <p className="text-lg mx-10 font-medium text-white">
             Delivering IT solutions that enable you to work smarter
           </p>
         </div>
