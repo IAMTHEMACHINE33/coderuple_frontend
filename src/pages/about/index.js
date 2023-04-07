@@ -19,7 +19,7 @@ const about = () => {
       <div className="relative">
         <History />
         <Whatedo />
-        <Popup />
+        <ContactUs />
         <Footer />
       </div>
     </>

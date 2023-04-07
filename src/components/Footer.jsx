@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className=" relative flex justify-center">
-      <footer className="responsive-container  md:mt-72 bottom-0 p-5 left-0 z-20  bg-white  md:flex md:items-center md:justify-between md:p-6">
+    <div className=" relative flex justify-center mt-10">
+      <footer className="responsive-container  bottom-0 p-5 left-0 z-20  bg-white  md:flex md:items-center md:justify-between md:p-6">
         <span className="grid grid-rows-3 grid-flow-col gap-0.5 justify-center text-center ">
           <div className="text-4xl italic">Coderuple</div>
           <div className="text-xs">Where business blooms!</div>
