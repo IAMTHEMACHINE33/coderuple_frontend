@@ -18,6 +18,7 @@ const about = () => {
       </div>
       <div className="relative">
         <History />
+        <Popup />
         <Whatedo />
         <ContactUs />
         <Footer />

@@ -3,10 +3,14 @@ import contactbottom from "./contactbottom.png";
 import ContactUsForm from "./ContactUsForm";
 import ContactUsInfo from "./ContactUsInfo";
 import HomePageHeader from "@/components/UI/HomePageHeader";
+import contactop from "./contactop.png";
 
 const ContactUs = () => {
   return (
     <>
+      <div className="relative ">
+        <Image src={contactop} className="w-full absolute bottom-0" />
+      </div>
       <div className="relative flex justify-center">
         <Image src={contactbottom} className="w-full absolute top-0" />
         <div className="flex flex-col mt-20 responsive-container  relative z-50">

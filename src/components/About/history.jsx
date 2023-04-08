@@ -47,29 +47,27 @@ const history = () => {
           </div>
         </div>
       </div> */}
-      <div className="relative  bg-[#D1E3ED]  ">
-        <div className=" mr-9 pt-10 sm:mx-14">
-          <div className="flex flex-row-reverse text-end ">
-            <div className="w-full md:w-3/4">
-              <h2 className="text-3xl font-semibold mb-3">Our History</h2>
-              <h1 className="text-7xl font-black leading-tight ">
-                Better Website Means A User Experience
-              </h1>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-3 gap-4">
-            <div class="col-start-3 row-start-1 col-span-1 row-span-2">
-              <div class="h-32  bg-gray-300">1</div>
-            </div>
-            <div class="col-start-1 col-span-2">
-              <div class="h-96 bg-gray-500">2</div>
-            </div>
-            <div class="col-start-3 row-start-1 col-span-1 row-span-2">
-              <div class="mt-32 h-64 bg-gray-400">3</div>
-            </div>
+      <div className="relative flex  justify-center bg-[#D1E3ED]  ">
+        <div className="flex  text-end reponsive-container md:w-3/4">
+          <div className=" ">
+            <h2 className="text-3xl font-semibold mb-3">Our History</h2>
+            <h1 className="text-7xl font-black leading-tight ">
+              Better Website Means A User Experience
+            </h1>
           </div>
         </div>
+
+        {/* <div class="grid grid-cols-3 gap-4">
+          <div class="col-start-3 row-start-1 col-span-1 row-span-2">
+            <div class="h-32  bg-gray-300">1</div>
+          </div>
+          <div class="col-start-1 col-span-2">
+            <div class="h-96 bg-gray-500">2</div>
+          </div>
+          <div class="col-start-3 row-start-1 col-span-1 row-span-2">
+            <div class="mt-32 h-64 bg-gray-400">3</div>
+          </div>
+        </div> */}
       </div>
     </>
   );
