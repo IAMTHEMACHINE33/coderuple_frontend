@@ -31,9 +31,6 @@ export default function QuickFilteringInitialize() {
             },
           },
         }}
-        disableColumnFilter
-        disableColumnSelector
-        disableDensitySelector
         columns={columns}
         slots={{ toolbar: GridToolbar }}
         slotProps={{
@@ -42,7 +39,9 @@ export default function QuickFilteringInitialize() {
             quickFilterProps: { debounceMs: 500 },
           },
         }}
-      />
+      >
+        sdfafsdaf
+      </DataGrid>
     </Box>
   );
 }

@@ -1,15 +1,11 @@
-import EnhancedTable from "@/components/UI/EnhancedTable"
-import QuickFilteringInitialize from "@/components/UI/QuickFilteringInitialize"
-
-const { default: AdminSideNavContainer } = require("@/components/Admin/AdminNavbar/AdminContainer")
+import TestimonialsListAdmin from "@/components/Admin/Testimonials/TestimonialsListAdmin"
+import AdminContainer from '../../components/Admin/AdminNavbar/AdminContainer'
 
 const testimonials = () => {
   return (
-    <AdminSideNavContainer>
-      <div>testimonials</div>
-      {/* <EnhancedTable /> */}
-      <QuickFilteringInitialize />
-    </AdminSideNavContainer>
+    <AdminContainer>
+      <TestimonialsListAdmin />
+    </AdminContainer>
   )
 }
 

@@ -1,9 +1,10 @@
 import AdminContainer from "@/components/Admin/AdminNavbar/AdminContainer"
+import InquiryListAdmin from "@/components/Admin/Inquiry/InquiryListAdmin"
 
 const inquiry = () => {
     return (
         <AdminContainer>
-            <div>inquiry</div>
+            <InquiryListAdmin />
         </AdminContainer>
     )
 }
