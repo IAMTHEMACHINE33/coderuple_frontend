@@ -1,24 +1,30 @@
 import Image from "next/image";
-import blue_wave from "./blue_wave_up_down.png";
+import contactbottom from "./contactbottom.png";
 import ContactUsForm from "./ContactUsForm";
 import ContactUsInfo from "./ContactUsInfo";
 import HomePageHeader from "@/components/UI/HomePageHeader";
+import contactop from "./contactop.png";
 
 const ContactUs = () => {
   return (
-    <div className="relative">
-      <div className="flex flex-col items-center justify-center mt-20 relative z-50">
-        <HomePageHeader
-          className="mb-10 text-xs sm:text-[5rem]"
-          text="Contact Us"
-        />
-        <div className="flex flex-col mt-20 items-center xs:justify-end md:flex-row md:max-w md:mx-10 ">
-          <ContactUsInfo />
-          <ContactUsForm />
+    <>
+      <div className="relative ">
+        <Image src={contactop} className="w-full absolute bottom-0" />
+      </div>
+      <div className="relative flex justify-center">
+        <Image src={contactbottom} className="w-full absolute top-0" />
+        <div className="flex flex-col mt-20 responsive-container  relative z-50">
+          <HomePageHeader
+            className=" text-xs sm:text-[5rem]"
+            text="Contact Us"
+          />
+          <div className="flex flex-col mt-10 items-center sm:justify-between md:flex-row md:max-w  ">
+            <ContactUsInfo />
+            <ContactUsForm />
+          </div>
         </div>
       </div>
-      <Image src={blue_wave} className="absolute top-0 z-10 w-full h-[53rem]" />
-    </div>
+    </>
   );
 };
 
