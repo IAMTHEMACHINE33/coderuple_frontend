@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router';
+import { TextField } from '@mui/material';
 
 const TestimonialsAdd = () => {
     const router = useRouter();
@@ -11,21 +12,22 @@ const TestimonialsAdd = () => {
     return (
         <div className='flex w-full justify-between flex-col gap-2'>
             <span>Add Testimonials</span>
-            <form className='shadow-md bg-white p-4'>
-                <div class="relative mb-6" data-te-input-wrapper-init>
-                    <input
-                        type="text"
-                        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                        id="exampleInput123"
-                        aria-describedby="emailHelp123"
-                        placeholder="Company Name" />
-                    <label
-                        for="emailHelp123"
-                        class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-                    >Company Name
-                    </label>
-                </div>
-                <div class="relative mb-6" data-te-input-wrapper-init>
+            <form className='shadow-md bg-white p-4 flex flex-col gap-4 justify-end'>
+                <TextField
+                    label="Company Name"
+                    id="outlined-size-small"
+                    size="small"
+                    fullWidth
+                />
+                <TextField
+                    label="Description"
+                    id="outlined-size-small"
+                    size="small"
+                    fullWidth
+                    multiline
+                    maxRows={8}
+                />
+                {/* <div class="relative mb-6" data-te-input-wrapper-init>
                     <textarea
                         type="text"
                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
@@ -37,7 +39,7 @@ const TestimonialsAdd = () => {
                         class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
                     >Description
                     </label>
-                </div>
+                </div> */}
                 <button
                     onClick={handleClick}
                     type="button"

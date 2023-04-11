@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
       (await import('tw-elements')).default;
     };
     use();
-  }, []);
+  });
 
   return (
     <main className={open_sans.className}>

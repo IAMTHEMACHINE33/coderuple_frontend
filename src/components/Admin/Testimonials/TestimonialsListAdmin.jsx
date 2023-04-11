@@ -1,4 +1,4 @@
-import QuickFilteringInitialize from '@/components/UI/QuickFilteringInitialize'
+import QuickFilteringInitialize from '@/components/UI/DataTable/QuickFilteringInitialize'
 import Link from 'next/link'
 import React from 'react'
 
