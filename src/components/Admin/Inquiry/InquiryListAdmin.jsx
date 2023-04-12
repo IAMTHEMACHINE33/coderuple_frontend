@@ -1,7 +1,4 @@
-import MaterialReactTable from '@/components/UI/DataTable/MaterialReactTable'
 import QuickFilteringInitialize from '@/components/UI/DataTable/QuickFilteringInitialize'
-import Link from 'next/link'
-import React from 'react'
 
 const InquiryListAdmin = () => {
     return (
@@ -9,8 +6,7 @@ const InquiryListAdmin = () => {
             <div className="flex w-full justify-between items-center">
                 <span>Inquiries</span>
             </div>
-            {/* <QuickFilteringInitialize /> */}
-            <MaterialReactTable />
+            <QuickFilteringInitialize />
         </div>
     )
 }
