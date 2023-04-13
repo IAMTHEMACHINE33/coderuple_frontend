@@ -3,6 +3,9 @@ import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import * as React from 'react';
 import testimonialData from './testimonialData';
 import TailwindButton from '../Buttons/TailwindButton';
+import { ControlPointDuplicateSharp } from '@mui/icons-material';
+import { useDemoData } from '@mui/x-data-grid-generator';
+
 
 export default function QuickFilteringInitialize(props) {
   const columns = [
@@ -26,36 +29,16 @@ export default function QuickFilteringInitialize(props) {
         </div>
     }
   ];
-
+  
   return (
     <Box sx={{ height: 400, width: 1, backgroundColor: 'white' }}>
       <DataGrid
         rows={testimonialData}
         columns={columns}
+        onRowSelectionModelChange={(newRowSelectionModel) => {
+          props.setSelectedRows(testimonialData.filter(({ id }) => newRowSelectionModel.includes(id)));
+        }}
         checkboxSelection
-        onSelectionModelChange={(ids) => {
-          const selectedIDs = new Set(ids);
-          const selectedRowData = rows.filter((row) =>
-            selectedIDs.has(row.id.toString())
-          )
-          console.log(selectedRowData);
-        }}
-        // initialState={{
-        //   ...data.initialState,
-        //   filter: {
-        //     filterModel: {
-        //       items: [],
-        //       quickFilterValues: ['ab'],
-        //     },
-        //   },
-        // }}
-        slots={{ toolbar: GridToolbar }}
-        slotProps={{
-          toolbar: {
-            showQuickFilter: true,
-            quickFilterProps: { debounceMs: 500 },
-          },
-        }}
       />
     </Box>
   );
