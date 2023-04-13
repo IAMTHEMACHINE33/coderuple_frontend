@@ -2,6 +2,7 @@ import Image from "next/image";
 import logo from "@/Images/logo.png";
 import menu from "../SVG/menu.svg";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   //navbar scroll when active state
@@ -111,23 +112,24 @@ const Navbar = () => {
         >
           <ul class="flex sm:gap-4 flex-col sm:flex-row" data-te-navbar-nav-ref>
             <p className="nav__links">
-              <a className=" underline" href="/home">
+              <Link className=" underline" href="/home">
                 Home
-              </a>
+              </Link>
             </p>
             <p className="nav__links">
-              <a className=" underline" href="/about">
+              <Link className=" underline" href="/about">
+                {/* <Link className=" underline" href={`/about`}> */}
                 About
-              </a>
+              </Link>
             </p>
             <p className="nav__links">
-              <a className=" underline">Our Services</a>
+              <Link className=" underline" href="">Our Services</Link>
             </p>
             <p className="nav__links">
-              <a className=" underline">Blogs</a>
+              <Link className=" underline" href="">Blogs</Link>
             </p>
             <p className="nav__links">
-              <a className=" underline">Contact Us</a>
+              <Link className=" underline" href="">Contact Us</Link>
             </p>
           </ul>
         </div>

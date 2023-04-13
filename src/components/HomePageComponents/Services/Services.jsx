@@ -47,7 +47,7 @@ const Services = () => {
         </p>
         <div className="flex justify-between items-center flex-col lg:flex-row responsive-container">
           {services?.data?.data[1].feature.map((feature) => {
-            return <Service feature={feature} />;
+            return <Service feature={feature} key={feature} />;
           })}
         </div>
       </div>

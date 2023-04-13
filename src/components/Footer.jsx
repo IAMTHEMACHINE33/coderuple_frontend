@@ -12,7 +12,7 @@ const Footer = () => {
       <footer className="responsive-container flex flex-row items-center justify-between  bottom-0 p-5 left-0 z-20 md:flex md:items-center md:justify-between md:p-6">
         <span className="grid grid-row-3 grid-flow-row gap-1.5 justify-center text-center ">
           <div className="text-4xl text-white italic text-left font-medium">Contact Us</div>
-          <div className="text-s text-white text-left">Let's work together!</div>
+          <div className="text-s text-white text-left">Let&apos;s work together!</div>
           <div className=" justify-center flex flex-col flex-nowrap gap-3 mt-2 mb-0">
             <input type="text" placeholder="Full Name" className="py-1.5 px-4 rounded-3xl outline-none"></input>
             <input type="text" placeholder="Email" className="py-1.5 px-4 rounded-3xl outline-none"></input>

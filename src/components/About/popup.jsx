@@ -142,7 +142,7 @@ const Popup = () => {
               <div class="relative p-4">
                 <p>
                   This is some placeholder content to show a vertically centered
-                  modal. We've added some extra copy here to show how vertically
+                  modal. Weve added some extra copy here to show how vertically
                   centering the modal works when combined with scrollable
                   modals. We also use some repeated line breaks to quickly
                   extend the height of the content, thereby triggering the
