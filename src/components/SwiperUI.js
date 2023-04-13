@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper";
-
+import { Parallax, Navigation, Pagination } from "swiper";
+// import "../styles/globals.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -12,31 +12,28 @@ import webdev from "@/Images/webdev.png";
 const SwiperUI = () => {
   return (
     <Swiper
-      spaceBetween={2}
-      slidesPerView={1}
-      //   pagination={{
-      //     dynamicBullets: true,
-      //     clickable: true,
-      //   }}
+      // pagination={{
+      //   clickable: true,
+      // }}
       className="carousel-slider"
-      loop={true}
-      autoplay={{
-        delay: 4500,
-        disableOnInteraction: false,
-      }}
-      modules={[Pagination, Navigation, Autoplay]}
+      parallax={true}
+      speed={600}
+      modules={[Parallax, Pagination, Navigation]}
       navigation={true}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={(swiper) => console.log(swiper)}
     >
+      <Image
+        className=" absolute top-0 left-0 w-[130%] max-w-none  h-screen object-cover "
+        slot="container-start"
+        src={softwareDev}
+        data-swiper-parallax="-23%"
+      />
+
       <SwiperSlide>
-        <div className="justify-center flex">
-          <Image
-            src={softwareDev}
-            alt="Picture of the author"
-            className="h-screen w-full object-cover"
-          />
-          <div className=" flex flex-col gap-5   items-center sm:items-start text-center sm:text-start  responsive-container absolute top-1/3 text-white">
+        <div className="justify-center flex h-screen">
+          <div
+            className=" flex flex-col gap-5   items-center sm:items-start text-center sm:text-start  responsive-container absolute top-1/3 text-white"
+            data-swiper-parallax="-300"
+          >
             <h1 className="text-4xl sm:text-7xl font-black">Hero main title</h1>
             <div className="flex flex-col gap-2 items-center sm:items-start ">
               <h2 className="text-2xl sm:text-5xl font-extralight">
@@ -57,13 +54,15 @@ const SwiperUI = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="justify-center flex">
-          <div className="h-screen w-full object-cover bg-[#17344A]" />
+        <div
+          className="justify-center flex h-screen"
+          data-swiper-parallax="-200"
+        >
           <div className=" flex flex-col gap-5   items-center sm:items-start text-center sm:text-start  responsive-container absolute top-1/3 text-white">
             <h1 className="text-4xl sm:text-7xl font-black">Hero main title</h1>
             <div className="flex flex-col gap-2 items-center sm:items-start ">
               <h2 className="text-2xl sm:text-5xl font-extralight">
-                Hero subtitle description
+                Is this working?
               </h2>
               <p
                 className="w-1/2  text-sm sm:text-base
@@ -80,17 +79,15 @@ const SwiperUI = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="justify-center flex">
-          <Image
-            src={webdev}
-            alt="Picture of the author"
-            className="h-screen w-full object-cover "
-          />
+        <div
+          className="justify-center flex h-screen"
+          data-swiper-parallax="-100"
+        >
           <div className=" flex flex-col gap-5   items-center sm:items-start text-center sm:text-start  responsive-container absolute top-1/3 text-white">
             <h1 className="text-4xl sm:text-7xl font-black">Hero main title</h1>
             <div className="flex flex-col gap-2 items-center sm:items-start ">
               <h2 className="text-2xl sm:text-5xl font-extralight">
-                Hero subtitle description
+                This is working!
               </h2>
               <p
                 className="w-1/2 text-sm sm:text-base

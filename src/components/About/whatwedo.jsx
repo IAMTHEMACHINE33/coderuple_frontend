@@ -5,7 +5,7 @@ const Whatwedo = () => {
   return (
     <>
       <div className="relative">
-        <div className=" relative grid justify-items-center justify-center bg-[#E7E9F0]">
+        <div className=" relative grid justify-items-center justify-center bg-[#E7E9F0] bg-blue-">
           <div className=" grid gap-5 responsive-container my-32">
             <h2 className="text-3xl sm:text-4xl font-semibold ">What we do</h2>
             <h1 className="w-3/4 text-5xl sm:text-7xl font-black leading-snug sm:leading-snug">
