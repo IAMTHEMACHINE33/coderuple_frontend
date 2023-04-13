@@ -2,11 +2,15 @@ import BannerBottom from "@/Images/bannerbottom.png";
 import Image from "next/image";
 import Company from "../../Images/company.jpg";
 
-const company = () => {
+const Company = () => {
   return (
     <>
       <div className=" relative flex justify-center">
-        <Image src={BannerBottom} className="absolute w-full top-0"></Image>
+        <Image
+          src={BannerBottom}
+          className="absolute w-full top-0"
+          alt="bottomwave.jpg"
+        ></Image>
         <div className="">
           <div className="grid relative justify-items-center gap-2 grid-rows-2 grid-cols-1 md:grid-cols-3  mb-5 top-0 responsive-container pt-11 ">
             <div className="col-span-2 row-span-1 bottom-0 grid gap-7">
@@ -89,4 +93,4 @@ const company = () => {
   );
 };
 
-export default company;
+export default Company;

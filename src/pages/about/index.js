@@ -1,7 +1,7 @@
-import Company from "@/components/About/company";
+import Company from "@/components/About/Company";
 import Navbar from "@/components/Navbar";
 import Banner from "@/components/Banner";
-import History from "@/components/About/history";
+import History from "@/components/About/History";
 import Popup from "@/components/About/popup";
 import ContactUs from "@/components/HomePageComponents/ContactUs/ContactUs";
 

@@ -26,6 +26,7 @@ const SwiperUI = () => {
         slot="container-start"
         src={softwareDev}
         data-swiper-parallax="-23%"
+        alt="carousel.jpgs"
       />
 
       <SwiperSlide>

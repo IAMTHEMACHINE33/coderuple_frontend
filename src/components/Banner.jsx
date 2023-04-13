@@ -14,7 +14,11 @@ const Banner = () => {
             Delivering IT solutions that enable you to work smarter
           </p>
         </div>
-        <Image src={BannerTop} className="absolute bottom-0  w-screen"></Image>
+        <Image
+          src={BannerTop}
+          className="absolute bottom-0  w-screen"
+          alt="topwave.jpg"
+        ></Image>
       </div>
     </>
   );

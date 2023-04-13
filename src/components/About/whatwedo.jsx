@@ -21,7 +21,11 @@ const Whatwedo = () => {
                   <div class="flex-col flex gap-6 p-6 justify-center justify-items-center ">
                     <h4 class="mb-4 text-2xl font-semibold">Web Development</h4>
                     <div className="flex justify-center">
-                      <Image src={DemoLogo} className="w-1/2 h-1/2" />
+                      <Image
+                        src={DemoLogo}
+                        className="w-1/2 h-1/2"
+                        alt="logo"
+                      />
                     </div>
                     <p class="mt-4">
                       Our mission is to enable people anywhere to solve big
@@ -40,7 +44,11 @@ const Whatwedo = () => {
                       Mobile Development
                     </h4>
                     <div className="flex justify-center">
-                      <Image src={DemoLogo} className="w-1/2 h-1/2" />
+                      <Image
+                        src={DemoLogo}
+                        className="w-1/2 h-1/2"
+                        alt="logo"
+                      />
                     </div>
                     <p class="mt-4">
                       Our mission is to enable people anywhere to solve big
@@ -56,7 +64,11 @@ const Whatwedo = () => {
                   <div class="flex-col flex gap-6 p-6 justify-center justify-items-center ">
                     <h4 class="mb-4 text-2xl font-semibold">UI/UX Design </h4>
                     <div className="flex justify-center">
-                      <Image src={DemoLogo} className="w-1/2 h-1/2" />
+                      <Image
+                        src={DemoLogo}
+                        className="w-1/2 h-1/2"
+                        alt="logo"
+                      />
                     </div>
                     <p class="mt-4">
                       Our mission is to enable people anywhere to solve big

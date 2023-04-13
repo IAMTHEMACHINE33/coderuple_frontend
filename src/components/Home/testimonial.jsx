@@ -40,36 +40,44 @@ const Testimonials = () => {
               <SwiperSlide>
                 <div className="flex flex-col gap-5 p-5 text-center items-center ">
                   <div className="rounded-full border-2 w-40 h-40 ">
-                    <Image src={logo} className="  " />
+                    <Image src={logo} className="  " alt="testimonial.jpg" />
                   </div>
                   <p className="leading-tight w-1/2 sm:w-auto">
-                    "1.We design experiences that are personalized to your
-                    user's context and motivations. We use design thinking and
-                    it leads to design that"
+                    1.We design experiences that are personalized to your users
+                    context and motivations. We use design thinking and it leads
+                    to design that
                   </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex flex-col gap-5 p-5 text-center items-center ">
                   <div className="rounded-full flex align-middle items-center border-2 w-40 h-40 ">
-                    <Image src={company} className=" w-full h-full border-2 " />
+                    <Image
+                      src={company}
+                      className=" w-full h-full border-2 "
+                      alt="testimonial.jpg"
+                    />
                   </div>
                   <p className="leading-tight w-1/2 sm:w-auto">
-                    "1.1.We design experiences that are personalized to your
-                    user's context and motivations. We use design thinking and
-                    it leads to design that"
+                    1.1.We design experiences that are personalized to your
+                    users context and motivations. We use design thinking and it
+                    leads to design that
                   </p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="flex flex-col gap-5 p-5 text-center items-center ">
                   <div className="rounded-full border-2 w-40 h-40 ">
-                    <Image src={logo} className="rounded-full  " />
+                    <Image
+                      src={logo}
+                      className="rounded-full  "
+                      alt="testimonial.jpg"
+                    />
                   </div>
                   <p className="leading-tight w-1/2 sm:w-auto">
-                    "2.We design experiences that are personalized to your
-                    user's context and motivations. We use design thinking and
-                    it leads to design that"
+                    2.We design experiences that are personalized to your users
+                    context and motivations. We use design thinking and it leads
+                    to design that
                   </p>
                 </div>
               </SwiperSlide>
@@ -79,12 +87,13 @@ const Testimonials = () => {
                     <Image
                       src={company}
                       className="rounded-full w-full h-full  "
+                      alt="testimonial.jpg"
                     />
                   </div>
                   <p className="leading-tight w-1/2 sm:w-auto">
-                    "2.1.We design experiences that are personalized to your
-                    user's context and motivations. We use design thinking and
-                    it leads to design that"
+                    2.1.We design experiences that are personalized to your
+                    users context and motivations. We use design thinking and it
+                    leads to design that
                   </p>
                 </div>
               </SwiperSlide>
