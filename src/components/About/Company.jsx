@@ -1,6 +1,6 @@
 import BannerBottom from "@/Images/bannerbottom.png";
 import Image from "next/image";
-import Company from "../../Images/company.jpg";
+import CompanyImage from "../../Images/company.jpg";
 
 const Company = () => {
   return (
@@ -32,7 +32,7 @@ const Company = () => {
 
             <div className="row-span-2 flex items-center ">
               <Image
-                src={Company}
+                src={CompanyImage}
                 alt="comapany image"
                 className=" rounded-[25px] object-cover w-full  h-full sm:w-fit sm:h-fit "
               />
