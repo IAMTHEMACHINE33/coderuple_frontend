@@ -1,4 +1,16 @@
+import TailwindButton from "../Buttons/TailwindButton"
+import React from 'react'
+
 const CenteredPopupModal = (props) => {
+
+    const closeButton = React.useRef()
+    const handleClick = () => {
+        setTimeout(() => {
+            console.log("Hello, World!")
+            closeButton?.current?.click();
+        }, 3000);
+    }
+
     return (
         <div
             data-te-modal-init
@@ -43,22 +55,27 @@ const CenteredPopupModal = (props) => {
                     {props.children}
 
                     <div
-                        class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                        class="flex gap-1 flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
                         <button
                             type="button"
                             class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
                             data-te-modal-dismiss
                             data-te-ripple-init
-                            data-te-ripple-color="light">
+                            data-te-ripple-color="light"
+                            id="te-close"
+                            ref={closeButton}
+                        >
                             Close
                         </button>
+                        {/* <input ref={closeButton} /> */}
                         <button
-                            type="button"
-                            class="ml-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                            data-te-ripple-init
-                            data-te-ripple-color="light">
-                            Save Testimonials
+                            onClick={(e) => handleClick(e)}
+                        >
+                            Test
                         </button>
+                        <TailwindButton button_type="danger" button_target={`${props.id}`} onClick={handleClick()}>
+                            Delete
+                        </TailwindButton>
                     </div>
                 </div>
             </div>
