@@ -9,7 +9,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="relative flex flex-col items-center justify-center w-full mt-10 footer-container">
-      <footer className="responsive-container flex flex-row items-center justify-between  bottom-0 p-5 left-0 z-20 md:flex md:items-center md:justify-between md:p-6">
+      <footer className="responsive-container flex flex-col items-center justify-between gap-5 bottom-0 p-5 left-0 z-20 md:flex md:flex-row md:items-center md:justify-between md:p-6">
         <span className="grid grid-row-3 grid-flow-row gap-1.5 justify-center text-center ">
           <div className="text-4xl text-white italic text-left font-medium">Contact Us</div>
           <div className="text-s text-white text-left">Let&apos;s work together!</div>
@@ -23,7 +23,7 @@ const Footer = () => {
         <span className="grid grid-row-3 grid-flow-row gap-1.5 text-left ">
           <div className="text-4xl text-white italic gap-0 text-left">Coderuple</div>
           <div className="text-s text-white text-left ">All of our pages</div>
-          <ul className=" justify-center text-left text-white flex flex-col flex-nowrap gap-0 sm:gap-0  items-left text-s lg:text-lg   mt-0 sm:dark:text-black-400 text-xs max-w-full  mb-0 sm:mr-0">
+          <ul className=" justify-center text-left text-white flex flex-col flex-nowrap gap-0 sm:gap-0  items-left  lg:text-lg   mt-0 sm:dark:text-black-400 text-lg max-w-full  mb-0 sm:mr-0">
             <li>
               <a href="#" className=" hover:underline  ">
                 - Home
@@ -84,7 +84,7 @@ const Footer = () => {
       <div className="copyright_container flex justify-center py-2 w-full">
         <p className="text-white">Copyright 2023 All rights reserved coderuple</p>
       </div>
-        </div>
+    </div>
   );
 };
 
