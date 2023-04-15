@@ -1,10 +1,15 @@
 import React from 'react'
 import TestimonialsListAdmin from './TestimonialsListAdmin';
-import CenteredPopupModal from '@/components/UI/Modals/CenteredPopupModal';
+// import CenteredPopupModal from '@/components/UI/Modals/CenteredPopupModal';
 import TestimonialsAdd from './TestimonialsAdd';
 import ModalDeleteListChildren from '@/components/UI/ModalChilldren/ModalDeleteListChildren';
+import ModalDeleteSingleChildren from '@/components/UI/ModalChilldren/ModalDeleteSingleChildren';
+import dynamic from 'next/dynamic'
 
 const TestimonialsPage = () => {
+
+    const headers = ['id', 'company', 'description']
+
     const identifiers = {
         add: {
             id: "addTestimonialModal",
@@ -16,11 +21,22 @@ const TestimonialsPage = () => {
         },
         delete: {
             id: "deleteTestimonialModal",
-            title: "Delete Testimonials"
+            title: "Delete Testimonial"
+        },
+        deleteSelected: {
+            id: "deleteSelectedTestimonialModal",
+            title: "Delete Selected Testimonials"
         },
     }
 
-    const [selectedRows, setSelectedRows] = useState([]);
+
+    const CenteredPopupModal = dynamic(
+        () => import('@/components/UI/Modals/CenteredPopupModal'),
+        { ssr: false }
+    )
+
+
+    const [selectedRows, setSelectedRows] = React.useState([]);
     console.log(selectedRows)
     return (
         <>
@@ -34,8 +50,12 @@ const TestimonialsPage = () => {
                 <TestimonialsAdd />
             </CenteredPopupModal>
 
+            <CenteredPopupModal id={identifiers.deleteSelected.id} title={identifiers.deleteSelected.title}>
+                <ModalDeleteListChildren selectedRows={selectedRows} headers={headers} />
+            </CenteredPopupModal>
+
             <CenteredPopupModal id={identifiers.delete.id} title={identifiers.delete.title}>
-                <ModalDeleteListChildren selectedRows={selectedRows} />
+                <ModalDeleteSingleChildren selectedRows={selectedRows} />
             </CenteredPopupModal>
 
             <pre style={{ fontSize: 10 }}>

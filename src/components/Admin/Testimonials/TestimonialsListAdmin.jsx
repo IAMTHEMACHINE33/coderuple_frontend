@@ -13,7 +13,7 @@ const TestimonialsListAdmin = (props) => {
                             + Add Testimonials
                         </TailwindButton>
                         :
-                        <TailwindButton button_type="danger" button_target={`${props.identifiers.delete.id}`}>
+                        <TailwindButton button_type="danger" button_target={`${props.identifiers.deleteSelected.id}`}>
                             - Delete Selected
                         </TailwindButton>
                 }

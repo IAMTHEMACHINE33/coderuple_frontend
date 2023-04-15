@@ -1,16 +1,14 @@
 import Box from '@mui/material/Box';
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
-import * as React from 'react';
-import testimonialData from './testimonialData';
+import { DataGrid } from '@mui/x-data-grid';
 import TailwindButton from '../Buttons/TailwindButton';
-import { ControlPointDuplicateSharp } from '@mui/icons-material';
-import { useDemoData } from '@mui/x-data-grid-generator';
+import testimonialData from './testimonialData';
 
 
 export default function QuickFilteringInitialize(props) {
   const columns = [
     { field: 'id', headerName: 'ID', width: 30 },
     { field: 'company', headerName: 'Company', width: 150 },
+    { field: 'status', headerName: 'Status', minWidth: 50 },
     { field: 'description', headerName: 'Description', minWidth: 150, flex: 1 },
     {
       field: "actions",
@@ -29,7 +27,7 @@ export default function QuickFilteringInitialize(props) {
         </div>
     }
   ];
-  
+
   return (
     <Box sx={{ height: 400, width: 1, backgroundColor: 'white' }}>
       <DataGrid
@@ -39,6 +37,7 @@ export default function QuickFilteringInitialize(props) {
           props.setSelectedRows(testimonialData.filter(({ id }) => newRowSelectionModel.includes(id)));
         }}
         checkboxSelection
+        disableRowSelectionOnClick
       />
     </Box>
   );
