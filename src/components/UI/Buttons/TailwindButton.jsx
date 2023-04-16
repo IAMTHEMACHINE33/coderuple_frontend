@@ -2,6 +2,7 @@ import React from 'react'
 
 const TailwindButton = (props) => {
     // success | danger | warning | info | primary | secondary 
+    // cons().log(props?.handleClick)
     return (
         <>
             {
@@ -12,9 +13,9 @@ const TailwindButton = (props) => {
                         data-te-ripple-init
                         data-te-ripple-color="light"
                         data-te-target={`#${props.button_target}`}
-                        data-te-toggle="modal"
+                        data-te-toggle={props.willNotDismissModal ? "props.willNotDismissModal" : "modal"}
                         disabled={props.disabled}
-                        onClick={() => props.onClick}
+                        onClick={props?.handleClick}
                     >
                         {props.children}
                     </button>
@@ -26,9 +27,9 @@ const TailwindButton = (props) => {
                             data-te-ripple-init
                             data-te-ripple-color="light"
                             data-te-target={`#${props.button_target}`}
-                            data-te-toggle="modal"
+                            data-te-toggle={props.willNotDismissModal ? "props.willNotDismissModal" : "modal"}
                             disabled={props.disabled}
-                            onClick={() => props.onClick}
+                            onClick={props?.handleClick}
                         >
                             {props.children}
                         </button>
@@ -40,9 +41,9 @@ const TailwindButton = (props) => {
                                 data-te-ripple-init
                                 data-te-ripple-color="light"
                                 data-te-target={`#${props.button_target}`}
-                                data-te-toggle="modal"
+                                data-te-toggle={props.willNotDismissModal ? "props.willNotDismissModal" : "modal"}
                                 disabled={props.disabled}
-                                onClick={() => props.onClick}
+                                onClick={props?.handleClick}
                             >
                                 {props.children}
                             </button>
@@ -54,9 +55,9 @@ const TailwindButton = (props) => {
                                     data-te-ripple-init
                                     data-te-ripple-color="light"
                                     data-te-target={`#${props.button_target}`}
-                                    data-te-toggle="modal"
+                                    data-te-toggle={props.willNotDismissModal ? "props.willNotDismissModal" : "modal"}
                                     disabled={props.disabled}
-                                    onClick={() => props.onClick}
+                                    onClick={props?.handleClick}
                                 >
                                     {props.children}
                                 </button>
@@ -68,9 +69,9 @@ const TailwindButton = (props) => {
                                         data-te-ripple-init
                                         data-te-ripple-color="light"
                                         data-te-target={`#${props.button_target}`}
-                                        data-te-toggle="modal"
+                                        data-te-toggle={props.willNotDismissModal ? "props.willNotDismissModal" : "modal"}
                                         disabled={props.disabled}
-                                        onClick={() => props.onClick}
+                                        onClick={props?.handleClick}
                                     >
                                         {props.children}
                                     </button>
@@ -82,9 +83,9 @@ const TailwindButton = (props) => {
                                             data-te-ripple-init
                                             data-te-ripple-color="light"
                                             data-te-target={`#${props.button_target}`}
-                                            data-te-toggle="modal"
+                                            data-te-toggle={props.willNotDismissModal ? "props.willNotDismissModal" : "modal"}
                                             disabled={props.disabled}
-                                            onClick={() => props.onClick}
+                                            onClick={props?.handleClick}
                                         >
                                             {props.children}
                                         </button>

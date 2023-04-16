@@ -1,16 +1,4 @@
-import TailwindButton from "../Buttons/TailwindButton"
-import React from 'react'
-
 const CenteredPopupModal = (props) => {
-
-    const closeButton = React.useRef()
-    const handleClick = () => {
-        setTimeout(() => {
-            console.log("Hello, World!")
-            closeButton?.current?.click();
-        }, 3000);
-    }
-
     return (
         <div
             data-te-modal-init
@@ -53,30 +41,6 @@ const CenteredPopupModal = (props) => {
                     </div>
 
                     {props.children}
-
-                    <div
-                        class="flex gap-1 flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
-                        <button
-                            type="button"
-                            class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
-                            data-te-modal-dismiss
-                            data-te-ripple-init
-                            data-te-ripple-color="light"
-                            id="te-close"
-                            ref={closeButton}
-                        >
-                            Close
-                        </button>
-                        {/* <input ref={closeButton} /> */}
-                        <button
-                            onClick={(e) => handleClick(e)}
-                        >
-                            Test
-                        </button>
-                        <TailwindButton button_type="danger" button_target={`${props.id}`} onClick={handleClick()}>
-                            Delete
-                        </TailwindButton>
-                    </div>
                 </div>
             </div>
         </div>

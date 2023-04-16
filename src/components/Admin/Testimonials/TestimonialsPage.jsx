@@ -5,6 +5,9 @@ import TestimonialsAdd from './TestimonialsAdd';
 import ModalDeleteListChildren from '@/components/UI/ModalChilldren/ModalDeleteListChildren';
 import ModalDeleteSingleChildren from '@/components/UI/ModalChilldren/ModalDeleteSingleChildren';
 import dynamic from 'next/dynamic'
+import ConfirmationButtonsForDelete from '@/components/UI/Modals/ModalConfirmationButtonsCRUD/ConfirmationButtonsForDelete';
+import ConfirmationButtonsForCreate from '@/components/UI/Modals/ModalConfirmationButtonsCRUD/ConfirmationButtonsForCreate';
+import ConfirmationButtonsForUpdate from '@/components/UI/Modals/ModalConfirmationButtonsCRUD/ConfirmationButtonsForUpdate';
 
 const TestimonialsPage = () => {
 
@@ -44,18 +47,22 @@ const TestimonialsPage = () => {
 
             <CenteredPopupModal id={identifiers.add.id} title={identifiers.add.title} reverse={true}>
                 <TestimonialsAdd />
+                <ConfirmationButtonsForCreate id={identifiers.add.id} />
             </CenteredPopupModal>
 
             <CenteredPopupModal id={identifiers.edit.id} title={identifiers.edit.title}>
                 <TestimonialsAdd />
+                <ConfirmationButtonsForUpdate id={identifiers.edit.id} />
             </CenteredPopupModal>
 
             <CenteredPopupModal id={identifiers.deleteSelected.id} title={identifiers.deleteSelected.title}>
                 <ModalDeleteListChildren selectedRows={selectedRows} headers={headers} />
+                <ConfirmationButtonsForDelete id={identifiers.delete.id} />
             </CenteredPopupModal>
 
             <CenteredPopupModal id={identifiers.delete.id} title={identifiers.delete.title}>
                 <ModalDeleteSingleChildren selectedRows={selectedRows} />
+                <ConfirmationButtonsForDelete id={identifiers.delete.id} />
             </CenteredPopupModal>
 
             <pre style={{ fontSize: 10 }}>
