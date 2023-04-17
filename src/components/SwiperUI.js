@@ -35,7 +35,9 @@ const SwiperUI = () => {
             className=" flex flex-col gap-5   items-center sm:items-start text-center sm:text-start  responsive-container absolute top-1/3 text-white"
             data-swiper-parallax="-300"
           >
-            <h1 className="text-4xl sm:text-7xl font-black">Hero main title</h1>
+            <h1 className="text-4xl sm:text-7xl font-semibold">
+              Hero main title
+            </h1>
             <div className="flex flex-col gap-2 items-center sm:items-start ">
               <h2 className="text-2xl sm:text-5xl font-extralight">
                 Hero subtitle description
@@ -60,7 +62,9 @@ const SwiperUI = () => {
           data-swiper-parallax="-200"
         >
           <div className=" flex flex-col gap-5   items-center sm:items-start text-center sm:text-start  responsive-container absolute top-1/3 text-white">
-            <h1 className="text-4xl sm:text-7xl font-black">Hero main title</h1>
+            <h1 className="text-4xl sm:text-7xl font-semibold">
+              Hero main title
+            </h1>
             <div className="flex flex-col gap-2 items-center sm:items-start ">
               <h2 className="text-2xl sm:text-5xl font-extralight">
                 Is this working?
@@ -85,7 +89,9 @@ const SwiperUI = () => {
           data-swiper-parallax="-100"
         >
           <div className=" flex flex-col gap-5   items-center sm:items-start text-center sm:text-start  responsive-container absolute top-1/3 text-white">
-            <h1 className="text-4xl sm:text-7xl font-black">Hero main title</h1>
+            <h1 className="text-4xl sm:text-7xl font-semibold">
+              Hero main title
+            </h1>
             <div className="flex flex-col gap-2 items-center sm:items-start ">
               <h2 className="text-2xl sm:text-5xl font-extralight">
                 This is working!

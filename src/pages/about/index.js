@@ -13,7 +13,7 @@ const about = () => {
     <>
       <div className="relative ">
         <Navbar />
-        <Banner />
+        <Banner text="About us" />
         <Company />
       </div>
       <div className="relative">
