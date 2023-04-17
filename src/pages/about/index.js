@@ -13,7 +13,10 @@ const about = () => {
     <>
       <div className="relative ">
         <Navbar />
-        <Banner />
+        <Banner
+          text="About us"
+          subtext=" Delivering IT solutions that enable you to work smarter"
+        />
         <Company />
       </div>
       <div className="relative">
