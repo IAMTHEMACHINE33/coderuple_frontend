@@ -1,6 +1,3 @@
-import BannerTop from "../Images/bannertop.png";
-
-import Image from "next/image";
 const Banner = (props) => {
   return (
     <>
