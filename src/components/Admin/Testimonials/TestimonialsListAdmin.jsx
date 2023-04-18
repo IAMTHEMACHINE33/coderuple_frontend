@@ -1,5 +1,4 @@
 import TailwindButton from '@/components/UI/Buttons/TailwindButton'
-import ControlledSelectionGrid from '@/components/UI/DataTable/ControlledSelectionGrid'
 import QuickFilteringInitialize from '@/components/UI/DataTable/QuickFilteringInitialize'
 
 const TestimonialsListAdmin = (props) => {
@@ -18,7 +17,7 @@ const TestimonialsListAdmin = (props) => {
                         </TailwindButton>
                 }
             </div>
-            <QuickFilteringInitialize identifiers={props.identifiers} setSelectedRows={props.setSelectedRows} />
+            <QuickFilteringInitialize identifiers={props.identifiers} setSelectedRows={props.setSelectedRows} data={props.data} />
         </div>
     )
 }

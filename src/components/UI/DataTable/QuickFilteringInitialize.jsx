@@ -6,9 +6,8 @@ import testimonialData from './testimonialData';
 
 export default function QuickFilteringInitialize(props) {
   const columns = [
-    { field: 'id', headerName: 'ID', width: 30 },
-    { field: 'company', headerName: 'Company', width: 150 },
-    { field: 'status', headerName: 'Status', minWidth: 50 },
+    { field: '_id', headerName: 'ID', width: 220 },
+    { field: 'company_name', headerName: 'Company Name', width: 150 },
     { field: 'description', headerName: 'Description', minWidth: 150, flex: 1 },
     {
       field: "actions",
@@ -31,10 +30,11 @@ export default function QuickFilteringInitialize(props) {
   return (
     <Box sx={{ height: 400, width: 1, backgroundColor: 'white' }}>
       <DataGrid
-        rows={testimonialData}
+        rows={props?.data}
+        getRowId={(row) => row._id}
         columns={columns}
         onRowSelectionModelChange={(newRowSelectionModel) => {
-          props.setSelectedRows(testimonialData.filter(({ id }) => newRowSelectionModel.includes(id)));
+          props.setSelectedRows(props?.data?.filter(({ _id }) => newRowSelectionModel.includes(_id)));
         }}
         checkboxSelection
         disableRowSelectionOnClick

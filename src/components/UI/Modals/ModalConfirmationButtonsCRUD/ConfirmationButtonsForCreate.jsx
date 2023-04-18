@@ -6,11 +6,11 @@ const ConfirmationButtonsForCreate = (props) => {
   const closeButton = useRef()
   const [isLoading, setIsLoading] = useState(false);
   const handleClick = () => {
-    setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-      closeButton?.current?.click();
-    }, 4000);
+    closeButton?.current?.click();
+    // setIsLoading(true)
+    // setTimeout(() => {
+    //   setIsLoading(false)
+    // }, 4000);
   }
   return (
     <div
@@ -26,7 +26,7 @@ const ConfirmationButtonsForCreate = (props) => {
       >
         Close
       </button>
-      <TailwindButton button_type="success" button_target={`${props.id}`} handleClick={handleClick} willNotDismissModal={true} disabled={isLoading}>
+      <TailwindButton type='submit' button_type="success" button_target={`${props.id}`} handleClick={handleClick} willNotDismissModal={true} disabled={isLoading}>
         {
           isLoading ? <div className="mx-3"><CircleSpinner /></div> : <>Create</>
         }

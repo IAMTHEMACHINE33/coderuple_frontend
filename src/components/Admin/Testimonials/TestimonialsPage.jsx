@@ -8,8 +8,16 @@ import dynamic from 'next/dynamic'
 import ConfirmationButtonsForDelete from '@/components/UI/Modals/ModalConfirmationButtonsCRUD/ConfirmationButtonsForDelete';
 import ConfirmationButtonsForCreate from '@/components/UI/Modals/ModalConfirmationButtonsCRUD/ConfirmationButtonsForCreate';
 import ConfirmationButtonsForUpdate from '@/components/UI/Modals/ModalConfirmationButtonsCRUD/ConfirmationButtonsForUpdate';
+import axios from 'axios';
+import { useEffect, useState } from "react";
+import { getTestimonialsApi } from '@/pages/api/admin/testimonialsApiCalls';
 
 const TestimonialsPage = () => {
+    const [data, setData] = useState([]);
+    const [newData, setNewData] = useState();
+    useEffect(() => {
+        getTestimonialsApi({ setData })
+    }, [newData]);
 
     const headers = ['id', 'company', 'description']
 
@@ -32,22 +40,19 @@ const TestimonialsPage = () => {
         },
     }
 
-
     const CenteredPopupModal = dynamic(
         () => import('@/components/UI/Modals/CenteredPopupModal'),
         { ssr: false }
     )
-
-
     const [selectedRows, setSelectedRows] = React.useState([]);
-    console.log(selectedRows)
+    console.log("newData", newData)
+
     return (
         <>
-            <TestimonialsListAdmin identifiers={identifiers} setSelectedRows={setSelectedRows} selectedRows={selectedRows} />
+            <TestimonialsListAdmin identifiers={identifiers} setSelectedRows={setSelectedRows} selectedRows={selectedRows} data={data} />
 
             <CenteredPopupModal id={identifiers.add.id} title={identifiers.add.title} reverse={true}>
-                <TestimonialsAdd />
-                <ConfirmationButtonsForCreate id={identifiers.add.id} />
+                <TestimonialsAdd setNewData={setNewData} id={identifiers.add.id} />
             </CenteredPopupModal>
 
             <CenteredPopupModal id={identifiers.edit.id} title={identifiers.edit.title}>
