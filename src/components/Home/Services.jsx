@@ -8,7 +8,7 @@ const Services = () => {
 
                 <div className='py-20 flex flex-col gap-10 w-full '>
                     <h1 className="capitalize text-5xl font-semibold">Our Services</h1>
-                    <div className='flex flex-col lg:flex-row  gap-5'>
+                    <div className='flex flex-col lg:flex-row  gap-8'>
                         <Cardservice />
                         <Cardservice reverse={true} />
                         <Cardservice />
