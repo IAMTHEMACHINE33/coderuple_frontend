@@ -11,17 +11,41 @@ const Footer = () => {
     <div className="relative flex flex-col items-center justify-center w-full footer-container">
       <footer className="responsive-container flex flex-col items-start  justify-start gap-5 bottom-0 p-5 left-0 z-20 md:flex md:flex-row  md:justify-between md:p-6">
         <span className="grid grid-row-3 grid-flow-row gap-1.5 justify-center text-center ">
-          <div className="text-4xl text-white italic text-left font-medium">Contact Us</div>
-          <div className="text-s text-white text-left">Let&apos;s work together!</div>
+          <div className="text-4xl text-white italic text-left font-medium">
+            Contact Us
+          </div>
+          <div className="text-s text-white text-left">
+            Let&apos;s work together!
+          </div>
           <div className=" justify-center flex flex-col flex-nowrap gap-3 mt-2 mb-0">
-            <input type="text" placeholder="Full Name" className="py-1.5 px-4 rounded-lg outline-none"></input>
-            <input type="text" placeholder="Email" className="py-1.5 px-4 rounded-lg outline-none"></input>
-            <textarea type="text" placeholder="Message" className="py-1.5 px-4 rounded-lg h-36 outline-none "></textarea>
-            <button type="submit" placeholder="Submit" className=" bg-[#6096ba] py-1.5 px-4 rounded-3xl text-white  w-32 mt-4">SUBMIT</button>
+            <input
+              type="text"
+              placeholder="Full Name"
+              className="py-1.5 px-4 rounded-lg outline-none"
+            ></input>
+            <input
+              type="text"
+              placeholder="Email"
+              className="py-1.5 px-4 rounded-lg outline-none"
+            ></input>
+            <textarea
+              type="text"
+              placeholder="Message"
+              className="py-1.5 px-4 rounded-lg h-36 outline-none "
+            ></textarea>
+            <button
+              type="submit"
+              placeholder="Submit"
+              className=" bg-[#6096ba] py-1.5 px-4 rounded-3xl text-white  w-32 mt-4"
+            >
+              SUBMIT
+            </button>
           </div>
         </span>
         <span className="grid grid-row-3 grid-flow-row gap-1.5 text-left">
-          <div className="text-4xl text-white italic gap-0 text-left">Coderuple</div>
+          <div className="text-4xl text-white italic gap-0 text-left">
+            Coderuple
+          </div>
           <div className="text-s text-white text-left ">All of our pages</div>
           <ul className=" justify-center text-left text-white flex flex-col flex-nowrap gap-0 sm:gap-0  items-left  lg:text-lg   mt-0 sm:dark:text-black-400 text-lg max-w-full  mb-0 sm:mr-0">
             <li>
@@ -30,7 +54,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className=" hover:underline ">
+              <a href="/services" className=" hover:underline ">
                 - Our Services
               </a>
             </li>
@@ -40,7 +64,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="/contact" className="hover:underline">
                 - Contact Us
               </a>
             </li>
@@ -82,7 +106,9 @@ const Footer = () => {
         </span>
       </footer>
       <div className="copyright_container flex justify-center py-2 w-full">
-        <p className="text-white">Copyright 2023 All rights reserved coderuple</p>
+        <p className="text-white">
+          Copyright 2023 All rights reserved coderuple
+        </p>
       </div>
     </div>
   );

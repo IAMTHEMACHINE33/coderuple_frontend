@@ -16,10 +16,9 @@ const about = () => {
         />
         <Imagepara />
         <Imagepara reverse={true} />
-        <Whatwedo/>
+        <Whatwedo />
         <Footer />
       </div>
-
     </>
   );
 };

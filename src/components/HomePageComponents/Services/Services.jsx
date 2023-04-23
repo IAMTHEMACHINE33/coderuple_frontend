@@ -12,7 +12,7 @@ const Services = () => {
   useEffect(() => {
     servicesApi({ setServices });
   }, []);
-  console.log("services", services?.data?.data[1].feature);
+  // console.log("services", services?.data?.data[1].feature);
   if (process.browser) {
     window.addEventListener("load", (event) => {
       let intersectionObserver = new IntersectionObserver((entries) => {

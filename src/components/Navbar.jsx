@@ -123,13 +123,19 @@ const Navbar = () => {
               </Link>
             </p>
             <p className="nav__links">
-              <Link className=" underline" href="/Ourservices">Our Services</Link>
+              <Link className=" underline" href="/services">
+                Our Services
+              </Link>
             </p>
             <p className="nav__links">
-              <Link className=" underline" href="">Blogs</Link>
+              <Link className=" underline" href="">
+                Blogs
+              </Link>
             </p>
             <p className="nav__links">
-              <Link className=" underline" href="/Contactus">Contact Us</Link>
+              <Link className=" underline" href="/contact">
+                Contact Us
+              </Link>
             </p>
           </ul>
         </div>

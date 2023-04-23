@@ -4,6 +4,7 @@ import Services from "@/components/HomePageComponents/Services/Services";
 import AboutUs from "@/components/HomePageComponents/AboutUs/AboutUs";
 import ContactUs from "@/components/HomePageComponents/ContactUs/ContactUs";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/HomePageComponents/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <Services />
         <AboutUs />
         <ContactUs />
-        {/* <Testimonials /> */}
+        <Testimonials />
         <Footer />
       </div>
     </>
