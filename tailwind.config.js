@@ -13,5 +13,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("tw-elements/dist/plugin")]
-}
+  plugins: [require("tw-elements/dist/plugin")],
+};
