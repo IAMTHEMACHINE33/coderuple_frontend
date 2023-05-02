@@ -5,6 +5,12 @@ export const authOptions = {
   // Configure one or more authentication providers
   providers: [
     CredentialsProvider({
+      name: "Credentials",
+
+      credentials: {
+        name: { label: "Email", type: "text" },
+        password: { label: "Password", type: "password" },
+      },
       async authorize(credentials, req) {
         const { name, password } = credentials;
         const res = await fetch("http://localhost:90/admin/login", {
@@ -12,6 +18,7 @@ export const authOptions = {
           headers: {
             "Content-Type": "application/json",
           },
+          credentials: "include",
           body: JSON.stringify({
             name,
             password,
@@ -21,7 +28,9 @@ export const authOptions = {
 
         if (res.ok && user) {
           return user;
-        } else return null;
+        } else {
+          throw new Error("invalid credentials");
+        }
       },
     }),
   ],

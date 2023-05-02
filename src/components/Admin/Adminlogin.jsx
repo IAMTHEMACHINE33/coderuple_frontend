@@ -1,16 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { signIn } from "next-auth/react";
 const Adminlogin = () => {
   const name = useRef("");
   const password = useRef("");
   const onSubmit = async () => {
-    const result = await signIn("credentials", {
+    const response = await signIn("credentials", {
       name: name.current,
       password: password.current,
       redirect: true,
       callbackUrl: "/admin",
     });
+    // console.log(response);
   };
   return (
     <div className="relative  flex justify-center">
@@ -31,7 +32,9 @@ const Adminlogin = () => {
             placeholder="Email"
             className="py-1.5 px-4 rounded-lg border outline-none border-[#6096BA] "
             onChange={(e) => {
-              name.current = e.target.value;
+              {
+                name.current = e.target.value;
+              }
             }}
           ></input>
           <input
@@ -39,7 +42,9 @@ const Adminlogin = () => {
             placeholder="Password"
             className="py-1.5 px-4 rounded-lg outline-none border border-[#6096BA]"
             onChange={(e) => {
-              password.current = e.target.value;
+              {
+                password.current = e.target.value;
+              }
             }}
           ></input>
           <button
