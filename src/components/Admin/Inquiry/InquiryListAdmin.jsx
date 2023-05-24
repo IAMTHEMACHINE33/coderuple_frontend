@@ -1,4 +1,4 @@
-import QuickFilteringInitialize from '@/components/UI/DataTable/QuickFilteringInitialize'
+// import QuickFilteringInitialize from '@/components/UI/DataTable/QuickFilteringInitialize'
 
 const InquiryListAdmin = () => {
     return (
@@ -6,7 +6,7 @@ const InquiryListAdmin = () => {
             <div className="flex w-full justify-between items-center">
                 <span>Inquiries</span>
             </div>
-            <QuickFilteringInitialize />
+            {/* //<QuickFilteringInitialize /> */}
         </div>
     )
 }

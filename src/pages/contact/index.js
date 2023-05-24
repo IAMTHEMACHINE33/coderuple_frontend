@@ -10,7 +10,7 @@ const index = () => {
             <Banner text="Contact us" />
             <div className='realtive bg-[#D9D9D9] flex justify-center'>
                 <div className='responsive-container flex flex-col  justify-center gap-3 py-20'>
-                    <h1 className='capitalize text-4xl font-semibold'>Let's Work Together!</h1>
+                    <h1 className='capitalize text-4xl font-semibold'>Lets Work Together!</h1>
                     <div className='flex flex-row'>
                         <div className='w-1/2 flex flex-col gap-3'>
                             <p className='capitalize  w-72'> Please tell us a bit about you, your project, and how best to reach you. We’ll get right back to you.</p>

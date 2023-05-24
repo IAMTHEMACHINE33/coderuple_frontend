@@ -4,6 +4,7 @@ import li from "../Images/lilogo.svg";
 import twitter from "../Images/twitterlogo.svg";
 import phone from "../Images/phone.svg";
 import mail from "../Images/mail.svg";
+import Link from "next/link";
 
 import Image from "next/image";
 const Footer = () => {
@@ -49,14 +50,14 @@ const Footer = () => {
           <div className="text-s text-white text-left ">All of our pages</div>
           <ul className=" justify-center text-left text-white flex flex-col flex-nowrap gap-0 sm:gap-0  items-left  lg:text-lg   mt-0 sm:dark:text-black-400 text-lg max-w-full  mb-0 sm:mr-0">
             <li>
-              <a href="#" className=" hover:underline  ">
+              <Link href="#" className=" hover:underline  ">
                 - Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/services" className=" hover:underline ">
+              <Link href="/services" className=" hover:underline ">
                 - Our Services
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="hover:underline  ">
@@ -64,9 +65,9 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:underline">
+              <Link href="/contact" className="hover:underline">
                 - Contact Us
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="hover:underline">
@@ -79,28 +80,28 @@ const Footer = () => {
           <div className="text-4xl text-white italic">Coderuple</div>
           <div className="text-s text-white ">Where your business blooms!</div>
           <div className="flex flex-row gap-1.5">
-            <Image src={phone} className="w-8 h-8 mt-2"></Image>
+            <Image src={phone} className="w-8 h-8 mt-2" alt="image"></Image>
             <div className="flex flex-col">
               <span className="text-white ">+977 9841709097</span>
               <span className="text-white ">+977 9813643643</span>
             </div>
           </div>
           <div className="flex flex-row gap-1.5">
-            <Image src={mail} className="w-8 h-8"></Image>
+            <Image src={mail} className="w-8 h-8" alt="image"></Image>
             <span className="text-white">coderupleglobal@gmail.com</span>
           </div>
           <div className=" flex gap-2 ">
             <div>
-              <Image src={fb} className="w-8 h-8"></Image>
+              <Image src={fb} className="w-8 h-8" alt="image"></Image>
             </div>
             <div>
-              <Image src={insta} className="w-8 h-8"></Image>
+              <Image src={insta} className="w-8 h-8" alt="image"></Image>
             </div>
             <div>
-              <Image src={li} className="w-8 h-8"></Image>
+              <Image src={li} className="w-8 h-8" alt="image"></Image>
             </div>
             <div>
-              <Image src={twitter} className="w-8 h-8 "></Image>
+              <Image src={twitter} className="w-8 h-8 " alt="image"></Image>
             </div>
           </div>
         </span>

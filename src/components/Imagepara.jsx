@@ -21,7 +21,7 @@ const Imagepara = (props) => {
                     </p>
                 </div>
                 <div className=' flex items-end pb-20 w-1/2'>
-                    <Image src={Company} className='rounded-3xl'></Image>
+                    <Image src={Company} className='rounded-3xl' alt="image"></Image>
                 </div>
             </div>
         </div>

@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react'
 
 const ModalDeleteListChildren = (props) => {
     const [headers, setHeaders] = useState([]);
-    useEffect(() => {
-        try {
-            setHeaders(Object.keys(props?.selectedRows[0]))
+    // useEffect(() => {
+    //     try {
+    //         setHeaders(Object.keys(props?.selectedRows[0]))
 
-        } catch (error) {
-            console.log(error)
-        }
-    }, [props?.selectedRows[0]]);
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // }, [props?.selectedRows[0]]);
     return (
         <div class="flex flex-col">
             <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -36,7 +36,7 @@ const ModalDeleteListChildren = (props) => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {
+                                {/* {
                                     Object.entries(props?.selectedRows).map((row) => {
                                         return (
                                             <tr class="border-t dark:border-neutral-500">
@@ -48,7 +48,7 @@ const ModalDeleteListChildren = (props) => {
                                             </tr>
                                         )
                                     })
-                                }
+                                } */}
 
                                 {/* {
                                     Object.entries(props?.selectedRows).map((row) => {

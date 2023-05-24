@@ -17,7 +17,7 @@ const Adminlogin = () => {
     <div className="relative  flex justify-center">
       <div className="flex flex-row justify-center">
         <div className="w-6/12">
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          {/* <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> */}
           <lottie-player
             src="https://assets3.lottiefiles.com/packages/lf20_jcikwtux.json"
             background="transparent"

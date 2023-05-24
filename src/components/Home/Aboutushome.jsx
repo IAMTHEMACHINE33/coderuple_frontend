@@ -19,7 +19,7 @@ const Aboutushome = () => {
                     </button>
                 </div>
                 <div>
-                    <Image src={company} className='' ></Image>
+                    <Image src={company} className='' alt="image" ></Image>
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@ const AboutUs = () => {
 
     return (
         <div className="relative flex flex-col items-center ">
-            <Image src={wave_gray} className="w-full" />
+            <Image src={wave_gray} className="w-full" alt="image" />
             <div className="flex flex-col gap-10 lg:gap-24 z-20 items-center responsive-container">
                 <HomePageHeader text="About Us" />
                 <AboutUsInfo flip={false} description={aboutUs?.data?.data[0]?.description} />

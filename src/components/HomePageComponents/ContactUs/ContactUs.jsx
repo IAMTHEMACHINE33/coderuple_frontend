@@ -9,10 +9,10 @@ const ContactUs = () => {
   return (
     <>
       <div className="relative ">
-        <Image src={contactop} className="w-full absolute bottom-0" />
+        <Image src={contactop} className="w-full absolute bottom-0" alt="image" />
       </div>
       <div className="relative flex justify-center">
-        <Image src={contactbottom} className="w-full absolute top-0" />
+        <Image src={contactbottom} className="w-full absolute top-0" alt="image" />
         <div className="flex flex-col mt-20 responsive-container  relative z-50">
           <HomePageHeader
             className=" text-xs sm:text-[5rem]"

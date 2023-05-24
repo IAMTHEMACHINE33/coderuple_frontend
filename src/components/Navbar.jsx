@@ -76,7 +76,7 @@ const Navbar = () => {
     >
       <div class="flex responsive-container flex-wrap items-center justify-between ">
         <span className="font-semibold text-lg flex items-center gap-2 h-full py-4">
-          <Image src={logo} height={30} />
+          <Image src={logo} height={30} alt="image" />
           CODERUPLE
         </span>
 

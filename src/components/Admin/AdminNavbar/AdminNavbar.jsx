@@ -1,4 +1,5 @@
 import { signIn, signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
 const AdminNavbar = () => {
   const { data: session } = useSession();
@@ -42,7 +43,7 @@ const AdminNavbar = () => {
               data-te-dropdown-toggle-ref
               aria-expanded="false"
             >
-              <img
+              <Image
                 src="https://tecdn.b-cdn.net/img/Photos/Avatars/img (31).webp"
                 class="rounded-full"
                 style={{ height: "22px", width: "22px" }}
