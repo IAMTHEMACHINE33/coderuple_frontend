@@ -6,7 +6,7 @@ const Content = () => {
       <div className=' flex  justify-center responsive-container py-20'>
         <div className=' flex flex-col gap-5 items-center'>
           <h1 className="capitalize text-5xl font-semibold">Why Us?</h1>
-          <p>Your ingenious ideas. Our state-of-the-art web development</p>
+          <p className='text-lg'>Your ingenious ideas. Our state-of-the-art web development</p>
           <div className='flex flex-row md:flex-row flex-wrap '>
             <Cardwhyus />
             <Cardwhyus reverse={true} />
