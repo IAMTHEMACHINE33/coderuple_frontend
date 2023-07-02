@@ -13,7 +13,7 @@ const index = () => {
                     <h1 className='capitalize text-4xl font-semibold'>Lets Work Together!</h1>
                     <div className='flex flex-row'>
                         <div className='w-1/2 flex flex-col gap-3'>
-                            <p className='capitalize  w-72'> Please tell us a bit about you, your project, and how best to reach you. We’ll get right back to you.</p>
+                            <p className='capitalize  w-72  font-light'> Please tell us a bit about you, your project, and how best to reach you. We’ll get right back to you.</p>
                             <div>
                                 <h6 className='capitalize text-base'>Customer Service representative:</h6>
                                 <h3 className='capitalize text-xl font-semibold'>+977 9813643643</h3>

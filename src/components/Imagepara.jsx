@@ -13,11 +13,11 @@ const Imagepara = (props) => {
                     </h1>
                     </div>
                     <div className='flex flex-col gap-4'>
-                    <p className='text-left'> Our passion and drive to deliver quality solutions have taken us to the boardroom of 200 yrs old company and coffee
+                    <p className='text-left  font-light'> Our passion and drive to deliver quality solutions have taken us to the boardroom of 200 yrs old company and coffee
                         shop meetings in Orlando, Washington, Singapore, Tokyo, Beijing and Kathmandu. We love the challenge to deliver
                         the best possible solution using the latest and future technologies. We understand that we are your extended TEAM.
                     </p>
-                    <p>
+                    <p className=' font-light'>
                         Our passion and drive to deliver quality solutions have taken us to the boardroom of 200 yrs old company and coffee
                         shop meetings in Orlando, Washington, Singapore, Tokyo, Beijing and Kathmandu. We love the challenge to deliver
                         the best possible solution using the latest and future technologies. We understand that we are your extended TEAM.

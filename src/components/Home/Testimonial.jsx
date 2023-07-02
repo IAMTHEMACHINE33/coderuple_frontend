@@ -42,7 +42,7 @@ const Testimonials = () => {
                   <div className="rounded-full border-2 w-40 h-40 ">
                     <Image src={logo} className="  " alt="testimonial.jpg" />
                   </div>
-                  <p className="leading-tight w-1/2 sm:w-auto">
+                  <p className="leading-tight w-1/2 sm:w-auto  font-light">
                     1.We design experiences that are personalized to your users
                     context and motivations. We use design thinking and it leads
                     to design that
@@ -58,7 +58,7 @@ const Testimonials = () => {
                       alt="testimonial.jpg"
                     />
                   </div>
-                  <p className="leading-tight w-1/2 sm:w-auto">
+                  <p className="leading-tight w-1/2 sm:w-auto  font-light">
                     1.1.We design experiences that are personalized to your
                     users context and motivations. We use design thinking and it
                     leads to design that
@@ -74,7 +74,7 @@ const Testimonials = () => {
                       alt="testimonial.jpg"
                     />
                   </div>
-                  <p className="leading-tight w-1/2 sm:w-auto">
+                  <p className="leading-tight w-1/2 sm:w-auto  font-light">
                     2.We design experiences that are personalized to your users
                     context and motivations. We use design thinking and it leads
                     to design that
@@ -90,7 +90,7 @@ const Testimonials = () => {
                       alt="testimonial.jpg"
                     />
                   </div>
-                  <p className="leading-tight w-1/2 sm:w-auto">
+                  <p className="leading-tight w-1/2 sm:w-auto  font-light">
                     2.1.We design experiences that are personalized to your
                     users context and motivations. We use design thinking and it
                     leads to design that
