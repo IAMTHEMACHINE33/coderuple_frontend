@@ -128,7 +128,7 @@ const Navbar = () => {
               </Link>
             </p>
             <p className="nav__links">
-              <Link className=" underline" href="/admin">
+              <Link className=" underline" href="/blogs">
                 Blogs
               </Link>
             </p>
