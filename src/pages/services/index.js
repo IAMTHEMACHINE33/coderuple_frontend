@@ -4,6 +4,8 @@ import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 
 import Imagepara from "@/components/Imagepara";
+import Workingprocess from '@/components/Ourservices/Workingprocess';
+import Ourservices from '@/components/Ourservices/Ourservices';
 
 const index = () => {
     return (
@@ -12,12 +14,13 @@ const index = () => {
                 <Navbar />
                 <Banner
                     text="Our Services"
-                    subtext=" Delivering IT solutions that enable you to work smarter"
+                    subtext=" Our mission is to make your business better through technology"
                 />
-                <Imagepara nodisplay={true}/>
+                {/* <Imagepara nodisplay={true} />
                 <Imagepara reverse={true} nodisplay={true} />
-                <Imagepara  nodisplay={true}/>
-
+                <Imagepara nodisplay={true} /> */}
+                <Ourservices/>
+                <Workingprocess />
                 <Footer />
             </div>
 
