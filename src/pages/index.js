@@ -1,11 +1,10 @@
-import SwiperUI from "@/components/SwiperUI";
-import Navbar from "../components/Navbar";
-import Services from "@/components/HomePageComponents/Services/Services";
-import AboutUs from "@/components/HomePageComponents/AboutUs/AboutUs";
-import ContactUs from "@/components/HomePageComponents/ContactUs/ContactUs";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Testimonials from "@/components/HomePageComponents/Testimonials/Testimonials";
-
+import SwiperUI from "@/components/SwiperUI";
+import Testimonials from "@/components/Home/Testimonial";
+import Services from "@/components/Home/Services";
+import Content from "@/components/Home/Whyus";
+import Aboutushome from "@/components/Home/Aboutushome";
 export default function Home() {
   return (
     <>
@@ -15,8 +14,8 @@ export default function Home() {
       </div>
       <div className="relative">
         <Services />
-        <AboutUs />
-        <ContactUs />
+        <Aboutushome />
+        <Content />
         <Testimonials />
         <Footer />
       </div>

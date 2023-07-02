@@ -21,7 +21,7 @@ const index = () => {
                             </div>
                             <div>
                                 <h6 className='capitalize text-base'>Do you prefer email?</h6>
-                                <h3 className='capitalize text-xl font-semibold'>coderupleglobal@gmail.com</h3></div>
+                                <h3 className=' text-xl font-semibold'>coderupleglobal@gmail.com</h3></div>
                         </div>
 
                         <div className='w-1/2 flex flex-col m-3 gap-3' >
