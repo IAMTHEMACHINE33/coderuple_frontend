@@ -21,12 +21,12 @@ const ComponentwithSearchbar = () => {
                                     to deliver the best possible solution using the latest and future technologies. </p>
                             </div>
                         </div>
-                        <div className='w-1/2 flex flex-col gap-8 pt-14'>
+                        <div className='w-1/2 flex flex-col gap-8 pt-16 sticky top-0'>
                             <div className='w-[] bg-[#E7E9F0] flex justify-between rounded-full py-2 px-6'>
                                 <span className='font-normal text-lg'>Search...</span>
                                 <Image src={icon} className='h-6 w-6 rounded-2xl'></Image>
                             </div>
-                            <div className=' bg-[#E4E6EB] flex flex-col justify-between rounded-2xl p-7 gap-8'>
+                            <div className=' bg-[#E4E6EB] flex flex-col justify-between rounded-2xl px-7 py-5 gap-5'>
                                 <span className='font-normal text-lg'>Recent Posts</span>
                                 <div className='flex gap-7'>
                                     <Image src={company} className='h-28 w-32 rounded-2xl'></Image>

@@ -5,8 +5,8 @@ import Company from '../../Images/company.jpg'
 const Workingprocess = (props) => {
     return (
         <>
-            <hr className='bg-[#D9D9D9] h-2 relative top-[435px] left-[550px] w-60' />
-            <hr className='bg-[#D9D9D9] h-2 relative top-[427px] left-[810px] w-60' />
+            <hr className='bg-[#D9D9D9] h-2 relative top-[435px] left-[550px] w-64' />
+            <hr className='bg-[#D9D9D9] h-2 relative top-[427px] left-[810px] w-64' />
             <hr className='bg-[#D9D9D9] h-2 relative top-[419px] left-[1080px] w-60' />
 
 

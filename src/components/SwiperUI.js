@@ -36,18 +36,16 @@ const SwiperUI = () => {
             data-swiper-parallax="-300"
           >
             <h1 className="text-4xl sm:text-7xl font-semibold">
-              Hero main title
-            </h1>
+            Welcome to Coderuple,         
+               </h1>
             <div className="flex flex-col gap-2 items-center sm:items-start ">
               <h2 className="text-2xl sm:text-5xl font-extralight">
-                Hero subtitle description
-              </h2>
+              Where your digital needs come to life!              </h2>
               <p
                 className="w-1/2 text-sm sm:text-base
             "
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Torem
-                ipsum dolor sit amet, consectetur adipiscing elit.
+               We deliver high-quality products and services ensuring all our customers are satisfied.
               </p>
             </div>
             <button className="rounded-full bg-[#6096BA] p-3 sm:w-1/5 w-1/3">

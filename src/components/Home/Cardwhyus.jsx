@@ -9,8 +9,8 @@ const Cardwhyus = (props) => {
             <div className={`flex flex-col ${props.reverse == true ? 'sm:flex-row-reverse' : 'sm:flex-row'} md:flex-row items-center gap-5`}>
                 <Image src={company} className='h-40 w-40 rounded-full' alt="image"></Image>
                 <div className='flex flex-col'>
-                    <h4 className='capitalize text-2xl font-semibold text-left'>Mobile Development</h4>
-                    <p className='text-left  font-light'>We only specialize in Google Ads because we give our undivided focus on the ins and outs of this platform. That is why we can deliver unimaginable results.</p>
+                    <h4 className='capitalize text-2xl font-semibold text-left'>{props.heading}</h4>
+                    <p className='text-left  font-light'>{props.Content}</p>
                 </div>
             </div>
         </div>
