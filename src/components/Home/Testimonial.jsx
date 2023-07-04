@@ -11,7 +11,7 @@ const Testimonials = () => {
       <div className="relative flex justify-center my-20">
         <div className="flex flex-col gap-10 responsive-container">
           <div>
-            <h1 className="capitalize text-5xl font-semibold">
+            <h1 className="capitalize text-5xl font-semibold text-center">
               Ask our clients
             </h1>
           </div>

@@ -8,10 +8,10 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.11.16",
+    "@mui/material": "^5.13.7",
     "@mui/x-data-grid": "^6.0.4",
     "@mui/x-data-grid-generator": "^6.0.4",
     "@next/font": "^13.2.4",

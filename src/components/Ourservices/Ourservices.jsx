@@ -10,7 +10,7 @@ const Ourservices = (props) => {
                     <h1 className=' capitalize text-5xl font-medium'>
                         Mobile Development
                     </h1>
-                    <div className='flex flex-row items-center '>
+                    <div className='flex flex-row items-center gap-8'>
                         <div className='flex flex-col gap-4 w-1/2 font-light'>
                             <p className='text-left'> Our team works closely with clients to transform their ideas into user-friendly mobile
                                 applications that are just a tap away. By collaborating as a group, we ensure that every project meets our clients'
@@ -23,17 +23,17 @@ const Ourservices = (props) => {
                             </p>
                         </div>
                         <div className=' flex justify-end  w-1/2'>
-                            <Image src={Company} className='rounded-3xl h-[310px] w-[450px]' alt="image" ></Image>
+                            <Image src={Company} className='rounded-3xl h-[310px] ' alt="image" ></Image>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='relative bg-[#FFFFFF] flex justify-center'>
                 <div className='responsive-container flex flex-col py-20 gap-2'>
-                    <h1 className=' capitalize text-5xl font-medium text-right pr-10'>
+                    <h1 className=' capitalize text-5xl font-medium text-right pr-5'>
                         Web Development
                     </h1>
-                    <div className='flex flex-row-reverse items-center'>
+                    <div className='flex flex-row-reverse items-center gap-8'>
                         <div className='flex flex-col gap-4 w-1/2 font-light'>
                             <p className='text-left'> At our company, we collaborate as a team to bring our clients' unique web application design ideas to life. 
                             Our goal is to deliver a customised solution that meets their needs and exceeds their expectations.
@@ -45,7 +45,7 @@ const Ourservices = (props) => {
                             </p>
                         </div>
                         <div className=' flex justify-start  w-1/2'>
-                            <Image src={Company} className='rounded-3xl h-[310px] w-[450px]' alt="image" ></Image>
+                            <Image src={Company} className='rounded-3xl h-[310px] ' alt="image" ></Image>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const Ourservices = (props) => {
                     <h1 className=' capitalize text-5xl font-medium'>
                     UI/UX Designs
                     </h1>
-                    <div className='flex flex-row  items-center'>
+                    <div className='flex flex-row  items-center gap-8'>
                         <div className='flex flex-col gap-4 w-1/2 font-light'>
                             <p className='text-left'> At our Company, our Design Team work closely with clients to transform their Application Vision into Reality.
                             </p>
@@ -66,7 +66,7 @@ const Ourservices = (props) => {
                             </p>
                         </div>
                         <div className=' flex justify-end  w-1/2'>
-                            <Image src={Company} className='rounded-3xl h-[310px] w-[450px]' alt="image"></Image>
+                            <Image src={Company} className='rounded-3xl h-[310px] ' alt="image"></Image>
                         </div>
                     </div>
                 </div>

@@ -10,9 +10,9 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="relative flex flex-col items-center justify-center w-full footer-container">
-      <footer className="responsive-container flex flex-col items-start  justify-start gap-5 bottom-0 left-0 z-20 md:flex md:flex-row  md:justify-between md:py-12 px-6">
-        <span className="grid grid-row-3 grid-flow-row gap-1.5 justify-center text-center ">
-          <div className="text-4xl text-white  text-left font-medium">
+      <footer className="responsive-container flex flex-col items-center md:items-start py-10 justify-start gap-5 bottom-0 left-0 z-20 md:flex md:flex-row  md:justify-between md:py-12 px-6 ">
+        <span className="grid grid-row-3 grid-flow-row gap-1.5  px-3 text-center w-full ">
+          <div className="text-4xl text-white text-left font-medium">
             Contact Us
           </div>
           <div className="text-s text-white text-left font-light">
@@ -43,7 +43,7 @@ const Footer = () => {
             </button>
           </div>
         </span>
-        <span className="grid grid-row-3 grid-flow-row gap-1.5 text-left">
+        <span className="grid grid-row-3 grid-flow-row gap-1.5 text-left px-3 w-full  md:justify-center">
           <div className="text-4xl text-white  gap-0 text-left">
             Quick Links
           </div>
@@ -76,7 +76,7 @@ const Footer = () => {
             </li>
           </ul>
         </span>
-        <span className="grid grid-flow-row gap-1.5 justify-center text-left  ">
+        <span className="grid grid-flow-row gap-1.5  text-left px-3 w-full ">
           <div className="text-4xl text-white ">Coderuple</div>
           <div className="flex flex-col gap-3">
           <div className="text-s text-white font-light">Where your business blooms!</div>
