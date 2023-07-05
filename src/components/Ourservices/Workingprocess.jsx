@@ -5,19 +5,19 @@ import Company from '../../Images/company.jpg'
 const Workingprocess = (props) => {
     return (
         <>
-            <hr className='bg-[#D9D9D9] h-2 relative top-[435px] left-[550px] w-64' />
-            <hr className='bg-[#D9D9D9] h-2 relative top-[427px] left-[810px] w-64' />
-            <hr className='bg-[#D9D9D9] h-2 relative top-[419px] left-[1080px] w-60' />
+            <hr className='bg-[#D9D9D9] h-2 relative top-[435px] left-[550px] w-64 hidden lg:flex' />
+            <hr className='bg-[#D9D9D9] h-2 relative top-[427px] left-[810px] w-64 hidden lg:flex' />
+            <hr className='bg-[#D9D9D9] h-2 relative top-[419px] left-[1080px] w-60 hidden lg:flex' />
 
 
             <div className='relative flex justify-center'>
-                <div className='responsive-container flex flex-col py-20 gap-10'>
+                <div className='responsive-container flex flex-col items-center py-20 gap-10'>
                     <h1 className=' capitalize text-5xl font-medium text-left'>
                         Our Working Process
                     </h1>
 
-                    <div className='flex flex-row gap-16'>
-                        <div className='flex flex-col items-center gap-12 w-48'>
+                    <div className='flex flex-col lg:flex-row gap-16'>
+                        <div className='flex flex-col items-center gap-12 lg:w-48'>
                             {/* <Image src={Company} className='h-44 w-44 rounded-full' /> */}
                             <div className='bg-[#D9D9D9] h-44 w-44 rounded-full'></div>
                             <div className='flex flex-col items-center gap-6'>
@@ -36,7 +36,7 @@ const Workingprocess = (props) => {
                             </div>
                         </div>
                         {/* <hr /> */}
-                        <div className='flex flex-col items-center gap-12 w-52'>
+                        <div className='flex flex-col items-center gap-12 lg:w-52'>
                             {/* <Image src={Company} className='h-44 w-44 rounded-full' /> */}
                             <div className='bg-[#D9D9D9] h-44 w-44 rounded-full'></div>
                             <div className='flex flex-col items-center gap-6'>
@@ -54,7 +54,7 @@ const Workingprocess = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col items-center gap-12 w-52'>
+                        <div className='flex flex-col items-center gap-12 lg:w-52'>
                             {/* <Image src={Company} className='h-44 w-44 rounded-full' /> */}
                             <div className='bg-[#D9D9D9] h-44 w-44 rounded-full'></div>
                             <div className='flex flex-col items-center gap-6'>
@@ -72,7 +72,7 @@ const Workingprocess = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex flex-col items-center gap-12 w-52'>
+                        <div className='flex flex-col items-center gap-12 lg:w-52'>
                             {/* <Image src={Company} className='h-44 w-44 rounded-full' /> */}
                             <div className='bg-[#D9D9D9] h-44 w-44 rounded-full'></div>
                             <div className='flex flex-col items-center gap-6'>
