@@ -14,7 +14,7 @@ const index = () => {
                 <Banner
                     text="Our Blogs"
                 />
-             <ComponentwithSearchbar/>
+                <ComponentwithSearchbar />
                 <Footer />
             </div>
 
