@@ -6,7 +6,7 @@ const Whatwedo = () => {
       <div className='responsive-container flex flex-col py-20 gap-10'>
         <div className='flex flex-col gap-4'>
         <h6 className={` capitalize text-xl font-medium  `}>What we do</h6>
-        <h1 className=' capitalize text-5xl font-semibold w-2/3'>
+        <h1 className=' capitalize text-5xl font-semibold sm:w-2/3'>
           Let us change the way you think about technology
         </h1>
         </div>
