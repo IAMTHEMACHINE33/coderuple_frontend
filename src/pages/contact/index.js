@@ -13,9 +13,9 @@ const index = () => {
             <div className='realtive bg-[#D9D9D9] flex justify-center'>
                 <div className='responsive-container flex flex-col  justify-center gap-3 py-20'>
                     <h1 className='capitalize text-4xl font-semibold'>Lets Work Together!</h1>
-                    <div className='flex flex-row'>
-                        <div className='w-1/2 flex flex-col gap-7'>
-                            <p className='capitalize  w-72  font-light'> Please tell us a bit about you, your project, and how best to reach you. We’ll get right back to you.</p>
+                    <div className='flex flex-col items-center md:flex-row md:items-start'>
+                        <div className='w-full md:w-1/2 flex flex-col gap-7'>
+                            <p className='capitalize  w-full md:w-72  font-light'> Please tell us a bit about you, your project, and how best to reach you. We’ll get right back to you.</p>
 
                             <div>
                                 <h6 className='capitalize text-base'>Customer Service representative:</h6>
@@ -27,7 +27,7 @@ const index = () => {
                                 <h3 className=' text-xl font-semibold'>coderupleglobal@gmail.com</h3></div>
                         </div>
 
-                        <div className='w-1/2 flex flex-col m-3 gap-3' >
+                        <div className='w-full md:w-1/2 flex flex-col m-3 gap-3' >
                             {/* <div class="relative">
                                 <input type="text" id="floating_outlined" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900  rounded-3xl border-1 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " />
                                 <label for="floating_outlined" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] peer-focus:bg-[#D9D9D9] px-2 peer-focus:px-2 peer-focus:text-black peer-focus:dark:text-black peer-placeholder-shown:scale-125 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-100 peer-focus:-translate-y-4 left-1">Full Name    </label>

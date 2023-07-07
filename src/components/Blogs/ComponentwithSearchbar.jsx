@@ -11,8 +11,15 @@ const ComponentWithSearchbar = () => {
         <div className="relative responsive-container flex flex-col md:flex-row justify-start items-center md:items-start py-20 gap-10 ">
 
           <div className='md:w-1/2 flex flex-col gap-10'>
-            <BlogComponent />
-            <BlogComponent />
+            <BlogComponent heading={`Mobile Development`}
+            content={`Our passion and drive to deliver quality solutions have taken us to the boardroom of 200 yrs old company and coffee
+             shop meetings in Orlando, Washington, Singapore, Tokyo, Beijing and Kathmandu. We love the challenge to deliver the best possible 
+             solution using the latest and future technologies. `}
+            />
+            <BlogComponent heading={`Web Development`}
+            content={`Our passion and drive to deliver quality solutions have taken us to the boardroom of 200 yrs old company and coffee 
+            shop meetings in Orlando, Washington, Singapore, Tokyo, Beijing and Kathmandu. We love the challenge to deliver the best possible 
+            solution using the latest and future technologies. `} />
           </div>
           <div className="sticky right-24 z-50 md:w-1/2 flex flex-col gap-8 top-20 pt-10">
             <div className="bg-[#E7E9F0] flex justify-between rounded-full py-2 px-6">

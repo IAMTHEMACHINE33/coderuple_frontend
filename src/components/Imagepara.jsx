@@ -5,7 +5,7 @@ const Imagepara = (props) => {
     return (
         <div className={`relative ${props.reverse ? 'bg-[#FFFFFF]' : 'bg-[#D9D9D9]'}  flex items-center flex-col md:gap-8`}>
             <div className={`responsive-container flex flex-col md:${props.reverse ? 'flex-row-reverse' : 'flex-row'} gap-10  `}>
-                <div className={` flex flex-col gap-10 md:${props.duplicate ? 'pb-12' : 'pb-20'} pt-20 ${props.reverse ? 'text-left' : 'text-left'} md:w-1/2 `}>
+                <div className={` flex flex-col gap-10 ${props.duplicate ? 'md:pb-0' : 'md:pb-20'} pt-20 ${props.reverse ? 'text-left' : 'text-left'} md:w-1/2 `}>
                     <div className='flex flex-col gap-3'>
                         <h6 className={` capitalize text-3xl font-medium  ${props.nodisplay ? 'invisible' : 'visible'} `}>{props.heading}</h6>
                         <h1 className=' capitalize text-5xl font-semibold'>
@@ -20,7 +20,7 @@ const Imagepara = (props) => {
                         </p>
                     </div>
                 </div>
-                <div className={`flex items-end  ${props.duplicate ? 'md:pb-12' : 'pb-20'} md:w-1/2`}>
+                <div className={`flex items-end  ${props.duplicate ? 'md:pb-0' : 'pb-20'} md:w-1/2`}>
                     <Image src={Company} className='rounded-3xl' alt="image"></Image>
                 </div>
             </div>
