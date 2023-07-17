@@ -60,9 +60,9 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <a href="/services" className="hover:underline  ">
+              <Link href="/services" className="hover:underline  ">
                 - Our Services
-              </a>
+              </Link>
             </li>
             <li>
               <Link href="/blogs" className="hover:underline">
@@ -70,9 +70,9 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:underline">
+              <Link href="/contact" className="hover:underline">
                 - Contact us
-              </a>
+              </Link>
             </li>
           </ul>
         </span>

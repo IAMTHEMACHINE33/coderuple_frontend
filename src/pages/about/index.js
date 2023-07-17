@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Banner from "@/components/Banner";
 import Imagepara from "@/components/Imagepara";
 import Whatwedo from "@/components/About/Whatwedo";
-
+import aboutus from '../../Images/about.svg'
 import Footer from "@/components/Footer";
 
 const about = () => {
@@ -15,6 +15,7 @@ const about = () => {
           subtext=" Delivering IT solutions that enable you to work smarter"
         />
         <Imagepara duplicate={"true"} heading={"About Company"} subheading={" Making IT A Part Of Your Business"}
+        image={aboutus}
         Contentone={`Welcome to our website! Our team is passionate about providing high-quality
          products/services to our customers. Our company was founded with the vision of offering 
          something unique and valuable to the market, and we have grown into a successful business 
@@ -31,6 +32,8 @@ const about = () => {
             Contentfive={`Thank you for learning more about us. We look forward to serving you and building a long-lasting relationship with you.`}
         />
         <Imagepara reverse={true} heading={"Our History "} subheading={" Better website means a user experience"}
+                image={aboutus}
+
         Contentone={`Our passion and drive to deliver quality solutions have taken us to the boardroom of 200 yrs 
         old company and coffee shop meetings in Orlando, Washington, Singapore, Tokyo, Beijing and Kathmandu. We 
         love the challenge to deliver the best possible solution using the latest and future technologies. We understand 
