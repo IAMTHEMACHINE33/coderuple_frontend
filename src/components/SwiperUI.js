@@ -30,20 +30,19 @@ const SwiperUI = () => {
       />
 
       <SwiperSlide>
-        <div className="justify-center flex h-screen">
+        <div className="justify-center flex h-screen ">
           <div
-            className=" flex flex-col gap-5   items-center sm:items-start text-center sm:text-start  responsive-container absolute top-1/3 text-white"
+            className=" flex flex-col  gap-12  items-center sm:items-start text-center sm:text-start  responsive-container absolute top-[39%] text-white"
             data-swiper-parallax="-300"
           >
+            <div className="flex flex-col gap-7 items-center sm:items-start ">
             <h1 className="text-4xl sm:text-7xl font-semibold">
             Welcome to Coderuple,         
                </h1>
-            <div className="flex flex-col gap-2 items-center sm:items-start ">
-              <h2 className="text-2xl sm:text-5xl font-extralight">
+              <h2 className="text-2xl sm:text-5xl font-light">
               Where your digital needs come to life!              </h2>
               <p
-                className="w-1/2 text-sm sm:text-base
-            "
+                className="w-1/2 text-sm sm:text-base font-extralight"
               >
                We deliver high-quality products and services ensuring all our customers are satisfied.
               </p>
@@ -54,7 +53,7 @@ const SwiperUI = () => {
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <div
           className="justify-center flex h-screen"
           data-swiper-parallax="-200"
@@ -107,7 +106,7 @@ const SwiperUI = () => {
             </button>
           </div>
         </div>
-      </SwiperSlide>
+      </SwiperSlide> */}
     </Swiper>
   );
 };

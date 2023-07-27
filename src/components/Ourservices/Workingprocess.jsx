@@ -21,7 +21,7 @@ const Workingprocess = (props) => {
                     <div className='flex flex-col lg:flex-row gap-16'>
                         <div className='flex flex-col items-center gap-12 lg:w-48'>
                             {/* <Image src={Company} className='h-44 w-44 rounded-full' /> */}
-                            <Image src={discover} className=' h-44 w-48'alt='image' />
+                            <Image src={discover} className=' h-44 w-48' alt='image' />
                             <div className='flex flex-col items-center gap-6'>
                                 <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                     <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-b   cold text-2xl'>1</span>
@@ -41,7 +41,7 @@ const Workingprocess = (props) => {
                         {/* <hr /> */}
                         <div className='flex flex-col items-center gap-12 lg:w-52'>
                             {/* <Image src={Company} className='h-44 w-44 rounded-full' /> */}
-                            <Image src={plan} className=' h-44 w-48' alt='image'/>
+                            <Image src={plan} className=' h-44 w-48' alt='image' />
                             <div className='flex flex-col items-center gap-6'>
                                 <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                     <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>2</span>
@@ -50,7 +50,7 @@ const Workingprocess = (props) => {
                                     PLANNING
                                 </h1>
                                 <p>
-                                    Once we have a clear understanding of your requirements, we move on to the planning stage. In this phase, we develop a strategic
+                                    Once we have a clear understanding of your requirements, we move to planning stage where we develop a strategic
                                     roadmap to address your needs effectively. This includes defining project scope, setting objectives, identifying key deliverables,
                                     establishing timelines, and allocating resources. We also consider factors such as budget, risks, and any compliance or regulatory requirements.
 
@@ -61,7 +61,7 @@ const Workingprocess = (props) => {
                         </div>
                         <div className='flex flex-col items-center gap-12 lg:w-52'>
                             {/* <Image src={Company} className='h-44 w-44 rounded-full' /> */}
-                            <Image src={execute} className=' h-44 w-48'alt='image' />
+                            <Image src={execute} className=' h-44 w-48' alt='image' />
                             <div className='flex flex-col items-center gap-6'>
                                 <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                     <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>3</span>
@@ -70,10 +70,8 @@ const Workingprocess = (props) => {
                                     EXECUTE
                                 </h1>
                                 <p>
-                                    The execution stage involves the implementation of the plan.We allocate the necessary resources,
-                                    such as project managers, developers to carry out the project activities. This phase includes designing and
-                                    developing the solutions,coding,testing and integrating various components.Throughout this stage, we maintain open
-                                    communication channels to provide progress updates and gather feedback from you, ensuring that we stay on track and address any concerns promptly.
+                                    The execution stage involves implementing the plan by allocating necessary resources such as project managers, developers to carry out the project activities, designing and developing solutions, coding, testing, and
+                                    integrating components.Throughout this stage, We maintain open communication to provide updates and gather feedback to stay on track and address concerns promptly.
 
                                 </p>
                                 <div>
@@ -82,7 +80,7 @@ const Workingprocess = (props) => {
                         </div>
                         <div className='flex flex-col items-center gap-12 lg:w-52'>
                             {/* <Image src={Company} className='h-44 w-44 rounded-full' /> */}
-                            <Image src={deliver} className=' h-44 w-48' alt='image'/>
+                            <Image src={deliver} className=' h-44 w-48' alt='image' />
                             <div className='flex flex-col items-center gap-6'>
                                 <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                     <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>4</span>
@@ -91,10 +89,8 @@ const Workingprocess = (props) => {
                                     DELIVER
                                 </h1>
                                 <p>
-                                    Once the execution stage is complete, we move on to the delivery stage. In this phase, we finalize the project deliverables and deploy
-                                    the solutions to your environment. We conduct rigorous testing and quality assurance processes to ensure that the developed IT solutions
-                                    meet your requirements and adhere to industry standards.The delivery stage concludes with the successful handover of the project to you,
-                                    marking the completion of the engagement.
+                                    After completing the execution stage, we move to the delivery phase where we finalize project deliverables, conduct thorough testing and quality assurance processes to deploy the solutions that meet your requirements and adhere to industry standards.
+                                    The delivery stage concludes with a successful handover of the project to you, marking the completion of the engagement.
                                 </p>
                                 <div>
                                 </div>

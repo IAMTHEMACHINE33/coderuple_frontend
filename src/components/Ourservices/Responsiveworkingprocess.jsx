@@ -18,53 +18,51 @@ const Responsiveworkingprocess = () => {
                     <div className='flex w-full gap-5'>
                         <div className='w-full flex justify-center'>
                             {/* <div className='bg-[#D9D9D9] h-44 w-44 rounded-full'></div> */}
-                            <Image src={discover} className=' h-44 w-48'alt='image' />
+                            <Image src={discover} className=' h-44 w-48' alt='image' />
                         </div>
                         <div className='w-full  flex justify-center'>
-                        <Image src={plan} className=' h-44 w-48'alt='image' />
+                            <Image src={plan} className=' h-44 w-48' alt='image' />
 
                         </div>
                         <div className='w-full  flex justify-center'>
-                        <Image src={execute} className=' h-44 w-48'alt='image' />
+                            <Image src={execute} className=' h-44 w-48' alt='image' />
 
                         </div>
                         <div className='w-full  flex justify-center'>
-                        <Image src={deliver} className=' h-44 w-48' alt='image'/>
+                            <Image src={deliver} className=' h-44 w-48' alt='image' />
 
                         </div>
 
 
                     </div>
                     <div className='flex w-full  pt-4'>
-                        <div className='w-full flex justify-end items-center'>
-
-                            <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
+                        <div className='w-1/4 flex justify-end items-center'>
+                            <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center '>
                                 <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>1</span>
-
                             </div>
-                            <hr className='bg-[#D9D9D9] h-2  w-2/5' />
-
+                            <hr className='bg-[#D9D9D9] h-2 flex justify-items-end items-end w-[134.5px]' />
                         </div>
-                        <div className='w-full  flex justify-center items-center'>
-                            <hr className='bg-[#D9D9D9] h-2  w-full' />
+
+                        <div className='w-1/4  flex justify-center items-center'>
+                            <hr className='bg-[#D9D9D9] h-2  w-[134.5px]' />
                             <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                 <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>2</span>
                             </div>
-                            <hr className='bg-[#D9D9D9] h-2  w-full' />
+                            <hr className='bg-[#D9D9D9] h-2 w-[134.5px] ' />
 
                         </div>
-                        <div className='w-full  flex justify-center items-center'>
-                            <hr className='bg-[#D9D9D9] h-2  w-full' />
+                        <div className='w-1/4  flex justify-center items-center'>
+                            <hr className='bg-[#D9D9D9] h-2  w-[134.5px] ' />
 
                             <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                 <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>3</span>
 
                             </div>
-                            <hr className='bg-[#D9D9D9] h-2  w-full' />
+                            <hr className='bg-[#D9D9D9] h-2  w-[134.5px] ' />
 
                         </div>
-                        <div className='w-full  flex justify-start items-center'>
-                            <hr className='bg-[#D9D9D9] h-2  w-2/5' />
+                        <div className='w-1/4  flex justify-start items-center'>
+                            <hr className='bg-[#D9D9D9] h-2  w-[134.5px] ' />
 
                             <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                 <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>4</span>
@@ -101,35 +99,30 @@ const Responsiveworkingprocess = () => {
                     <div className='flex w-full gap-10 text-center '>
                         <div className='w-full flex justify-center'>
                             <p>
-                                During the discovery stage, we aim to understand your specific requirements, goals, and challenges. We engage in thorough
-                                discussions with you to gather information about your business, current systems, processes, and any issues you may be facing to find the optimum solution.
-                                The primary objective of this stage is to define the problem statement and identify the desired outcomes.
+                                During discovery, we aim to understand your requirements, goals, and challenges. We discuss your business, current systems, processes,
+                                and issues to find the best solution. The primary objective is to define the problem and identify desired outcomes.
 
                             </p>
                         </div>
                         <div className='w-full flex justify-center'>
                             <p>
-                                Once we have a clear understanding of your requirements, we move on to the planning stage. In this phase, we develop a strategic
-                                roadmap to address your needs effectively. This includes defining project scope, setting objectives, identifying key deliverables,
-                                establishing timelines, and allocating resources. We also consider factors such as budget, risks, and any compliance or regulatory requirements.
+
+                                In the planning stage. We create a strategic roadmap to address your needs effectively. This involves defining
+                                project scope, objectives, deliverables, timelines, resources, and considering budget, risks, and compliance requirements.
 
                             </p>
                         </div>
                         <div className='w-full flex justify-center '>
                             <p>
-                                The execution stage involves the implementation of the plan.We allocate the necessary resources,
-                                such as project managers, developers to carry out the project activities. This phase includes designing and
-                                developing the solutions,coding,testing and integrating various components.Throughout this stage, we maintain open
-                                communication channels to provide progress updates and gather feedback from you, ensuring that we stay on track and address any concerns promptly.
+                                In the execution stage, we implement the plan by allocating resources, designing, developing solution, coding, testing, and
+                                integrating components. We maintain open communication for updates, feedback, and  address concerns promptly.
 
                             </p>
                         </div>
                         <div className='w-full  flex justify-center'>
                             <p>
-                                Once the execution stage is complete, we move on to the delivery stage. In this phase, we finalize the project deliverables and deploy
-                                the solutions to your environment. We conduct rigorous testing and quality assurance processes to ensure that the developed IT solutions
-                                meet your requirements and adhere to industry standards.The delivery stage concludes with the successful handover of the project to you,
-                                marking the completion of the engagement.
+                                After execution, we enter delivery phase. Here, we finalize project deliverables, conduct rigorous testing and quality assurance to deploy solutions.
+                                The stage concludes with a successful handover, marking project completion.
                             </p>
                         </div>
 

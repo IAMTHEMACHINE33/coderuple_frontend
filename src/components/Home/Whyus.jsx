@@ -10,9 +10,9 @@ const Content = () => {
     <div className='relative flex justify-center bg-[#D9D9D9] '>
       <div className=' flex  justify-center responsive-container py-20'>
         <div className=' flex flex-col gap-5 items-center'>
-          <h1 className="capitalize text-5xl font-semibold">Why Us?</h1>
-          <p className='text-xl'>Your ingenious ideas. Our state-of-the-art web development</p>
-          <div className='flex flex-row md:flex-row lg:gap-8 flex-wrap pt-3'>
+          <h1 className="capitalize text-5xl font-medium">Why Us?</h1>
+          <p className='text-xl font-normal'>Your ingenious ideas. Our state-of-the-art web development</p>
+          <div className='flex flex-row md:flex-row gap-5 lg:gap-8 flex-wrap pt-3'>
             <Cardwhyus heading={"Innovation"}
             Content={"Bring us your wildest ideas and with our creative mindset and tools we’ll make it happen. Our team will  help you develop an online business strategy to outplay your competitors."}
             image={innovation}

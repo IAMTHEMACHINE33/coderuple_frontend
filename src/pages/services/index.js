@@ -7,7 +7,7 @@ import Imagepara from "@/components/Imagepara";
 import Workingprocess from '@/components/Ourservices/Workingprocess';
 import Ourservices from '@/components/Ourservices/Ourservices';
 import Responsiveworkingprocess from '@/components/Ourservices/Responsiveworkingprocess';
-import mobile from '../../Images/mobile.png' 
+import mobile from '../../Images/mobile.svg' 
 import web from '../../Images/one.svg' 
 import ui from '../../Images/two.svg' 
 
@@ -39,7 +39,8 @@ const index = () => {
 
                 />
                 <Ourservices heading={`UI/UX Designs`}
-                    contentone={` At our Company, our Design Team work closely with clients to transform their Application Vision into Reality.`}
+                    contentone={` At our Company, our Design Team work closely with clients to transform their Application Vision into Reality. 
+                    Our mission is to Revolutionize digital landscapes with cutting-edge solutions, surpassing client needs for a competitive edge.`}
                     contenttwo={`  Our team of skilled designers has extensive experience in creating user-friendly applications that provide a seamless user experience.
                     From wireframing to prototyping, we involve our clients in every step of the process to ensure that the end product exceeds their 
                     expectations.`}

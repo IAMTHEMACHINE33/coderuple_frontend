@@ -66,6 +66,11 @@ body {
     width: 1170px;
   }
 }
+@media (min-width: 1600px) {
+  .responsive-container {
+    width: 1300px;
+  }
+}
 
 .Gear {
   animation: rotate 9s infinite;

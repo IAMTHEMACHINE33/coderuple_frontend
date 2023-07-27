@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Cardservice from './Cardservice';
-import mobile from '../../Images/mobile.png'
+import mobile from '../../Images/mobile.svg'
 import web from '../../Images/one.svg'
 import ui from '../../Images/two.svg'
 const Services = () => {
@@ -8,9 +8,9 @@ const Services = () => {
         <div className='relative bg-[#D9D9D9] flex  justify-center text-center'>
             <div className=' flex  justify-center responsive-container'>
 
-                <div className='py-20 flex flex-col gap-10 w-full '>
-                    <h1 className="capitalize text-5xl font-semibold">Our Services</h1>
-                    <div className='flex flex-col  lg:flex-row  gap-10'>
+                <div className='py-20 flex flex-col gap-9 w-full '>
+                    <h1 className="capitalize text-5xl font-medium">Our Services</h1>
+                    <div className='flex flex-col  lg:flex-row justify-between gap-20'>
                         <Cardservice 
                         heading={'Mobile Development'}
                         content={`Our team works closely with clients to transform their ideas into user-friendly 

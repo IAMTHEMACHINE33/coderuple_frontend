@@ -13,7 +13,7 @@ const ComponentWithSearchbar = () => {
     <div className="relative">
 
       <div className="relative flex justify-center z-0 bg-[#D9D9D9]">
-        <div className="relative responsive-container flex flex-col md:flex-row justify-start items-center md:items-start py-20 gap-10 ">
+        <div className="relative responsive-container flex flex-col md:flex-row justify-start items-center md:items-start py-20 gap-20 ">
 
           <div className='md:w-1/2 flex flex-col gap-10'>
             <BlogComponent heading={`Mobile Development`}
@@ -39,9 +39,9 @@ const ComponentWithSearchbar = () => {
               <span className="font-normal text-lg">Search...</span>
               <Image src={icon} className="h-6 w-6 rounded-2xl" alt='image'/>
             </div>
-            <div className="bg-[#E4E6EB] flex flex-col justify-between rounded-2xl px-7 py-5 gap-5">
+            <div className="bg-[#E4E6EB] flex flex-col justify-between rounded-2xl px-10 py-9 gap-5">
               <span className="font-normal text-lg">Recent Posts</span>
-              <div className="flex flex-col lg:flex-row gap-7">
+              <div className="flex flex-col lg:flex-row gap-2">
               <div className='lg:w-1/3'>
               <Image src={cardmobile} className="h-60 w-auto md:h-28 md:w-32 rounded-2xl bg-white" alt='image'/>
                 </div>
@@ -50,7 +50,7 @@ const ComponentWithSearchbar = () => {
                   <span className="font-semibold"><li>January 21, 2021</li></span>
                 </div>
               </div>
-              <div className="flex flex-col lg:flex-row gap-7">
+              <div className="flex flex-col lg:flex-row gap-2">
               <div className='lg:w-1/3'>
               <Image src={cardweb} className=" h-60 w-auto md:h-28 md:w-32 rounded-2xl bg-white"alt='image' />
                 </div>
@@ -59,7 +59,7 @@ const ComponentWithSearchbar = () => {
                   <span className="font-semibold"><li>January 21, 2021</li></span>
                 </div>
               </div>
-              <div className="flex flex-col lg:flex-row gap-7">
+              <div className="flex flex-col lg:flex-row gap-2">
                 <div className='lg:w-1/3'>
                 <Image src={cardui} className="h-60 w-auto md:h-28 md:w-32 rounded-2xl bg-white"alt='image' />
                 </div>

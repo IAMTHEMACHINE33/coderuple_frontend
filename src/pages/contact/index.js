@@ -12,7 +12,7 @@ const index = () => {
             <Banner text="Contact us" />
             <div className='realtive bg-[#D9D9D9] flex justify-center'>
                 <div className='responsive-container flex flex-col  justify-center gap-3 py-20'>
-                    <h1 className='capitalize text-4xl font-semibold'>Lets Work Together!</h1>
+                    <h1 className='capitalize text-4xl font-medium'>Lets Work Together!</h1>
                     <div className='flex flex-col items-center md:flex-row md:items-start'>
                         <div className='w-full md:w-1/2 flex flex-col gap-7'>
                             <p className='capitalize  w-full md:w-72  font-light'> Please tell us a bit about you, your project, and how best to reach you. We’ll get right back to you.</p>
@@ -23,7 +23,7 @@ const index = () => {
                                 <h3 className='capitalize text-xl font-semibold'>+977 9841709097</h3>
                             </div>
                             <div>
-                                <h6 className='capitalize text-base'>Do you prefer email?</h6>
+                                <h6 className='capitalize text-light'>Do you prefer email?</h6>
                                 <h3 className=' text-xl font-semibold'>coderupleglobal@gmail.com</h3></div>
                         </div>
 
