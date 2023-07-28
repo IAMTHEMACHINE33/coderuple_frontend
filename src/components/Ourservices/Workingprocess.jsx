@@ -26,14 +26,14 @@ const Workingprocess = (props) => {
                                 <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                     <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-b   cold text-2xl'>1</span>
                                 </div>
-                                <h1 className=' capitalize text-4xl font-normal'>
+                                <h1 className=' capitalize text-4xl font-light'>
                                     DISCOVERY
                                 </h1>
                                 <p>
-                                    During the discovery stage, we aim to understand your specific requirements, goals, and challenges. We engage in thorough
-                                    discussions with you to gather information about your business, current systems, processes, and any issues you may be facing to find the optimum solution.
-                                    The primary objective of this stage is to define the problem statement and identify the desired outcomes.
-                                </p>
+                                During discovery, we aim to understand your requirements, goals, and challenges. We discuss your business, current systems, processes,
+                                and issues to find the best solution. The primary objective is to define the problem and identify desired outcomes.
+
+                            </p>
                                 <div>
                                 </div>
                             </div>
@@ -46,13 +46,13 @@ const Workingprocess = (props) => {
                                 <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                     <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>2</span>
                                 </div>
-                                <h1 className=' capitalize text-4xl font-normal'>
+                                <h1 className=' capitalize text-4xl font-light'>
                                     PLANNING
                                 </h1>
                                 <p>
-                                    Once we have a clear understanding of your requirements, we move to planning stage where we develop a strategic
-                                    roadmap to address your needs effectively. This includes defining project scope, setting objectives, identifying key deliverables,
-                                    establishing timelines, and allocating resources. We also consider factors such as budget, risks, and any compliance or regulatory requirements.
+
+                                    In the planning stage, We create a strategic roadmap to address your requirements and needs effectively. This involves defining
+                                    project scope, objectives, deliverables, timelines,requirements, resources, and considering budget, risks, and compliance requirements.
 
                                 </p>
                                 <div>
@@ -66,14 +66,14 @@ const Workingprocess = (props) => {
                                 <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                     <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>3</span>
                                 </div>
-                                <h1 className=' capitalize text-4xl font-normal'>
+                                <h1 className=' capitalize text-4xl font-light'>
                                     EXECUTE
                                 </h1>
                                 <p>
-                                    The execution stage involves implementing the plan by allocating necessary resources such as project managers, developers to carry out the project activities, designing and developing solutions, coding, testing, and
-                                    integrating components.Throughout this stage, We maintain open communication to provide updates and gather feedback to stay on track and address concerns promptly.
+                                In the execution stage, we implement the plan by allocating resources, designing, developing solution, coding, testing, and
+                                integrating components. We maintain open communication for updates, feedback, and  address concerns promptly.
 
-                                </p>
+                            </p>
                                 <div>
                                 </div>
                             </div>
@@ -85,13 +85,13 @@ const Workingprocess = (props) => {
                                 <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center'>
                                     <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>4</span>
                                 </div>
-                                <h1 className=' capitalize text-4xl font-normal'>
+                                <h1 className=' capitalize text-4xl font-light'>
                                     DELIVER
                                 </h1>
                                 <p>
-                                    After completing the execution stage, we move to the delivery phase where we finalize project deliverables, conduct thorough testing and quality assurance processes to deploy the solutions that meet your requirements and adhere to industry standards.
-                                    The delivery stage concludes with a successful handover of the project to you, marking the completion of the engagement.
-                                </p>
+                                After execution, we enter delivery phase. Here, we finalize project deliverables, conduct rigorous testing and quality assurance to deploy solutions.
+                                The stage concludes with a successful handover, marking project completion.
+                            </p>
                                 <div>
                                 </div>
                             </div>

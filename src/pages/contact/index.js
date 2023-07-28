@@ -51,7 +51,7 @@ const index = () => {
                                     </label>
                                 </div> */}
 
-                                <button className='bg-[#6096BA] text-white w-28 rounded-xl flex justify-center p-1'>Submit</button>
+                                <button className='bg-[#6096BA] text-white w-52 rounded-3xl flex justify-center py-3 text-xl'>SUBMIT</button>
                             </div>
                         </div>
                     </div>

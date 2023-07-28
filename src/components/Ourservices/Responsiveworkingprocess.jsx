@@ -97,29 +97,29 @@ const Responsiveworkingprocess = () => {
 
                     </div>
                     <div className='flex w-full gap-10 text-center '>
-                        <div className='w-full flex justify-center'>
+                        <div className='w-full flex justify-center font-light'>
                             <p>
                                 During discovery, we aim to understand your requirements, goals, and challenges. We discuss your business, current systems, processes,
                                 and issues to find the best solution. The primary objective is to define the problem and identify desired outcomes.
 
                             </p>
                         </div>
-                        <div className='w-full flex justify-center'>
+                        <div className='w-full flex justify-center font-light'>
                             <p>
 
-                                In the planning stage. We create a strategic roadmap to address your needs effectively. This involves defining
-                                project scope, objectives, deliverables, timelines, resources, and considering budget, risks, and compliance requirements.
+                                In the planning stage, We create a strategic roadmap to address your requirements and needs effectively. This involves defining
+                                project scope, objectives, deliverables, timelines,requirements, resources, and considering budget, risks, and compliance requirements.
 
                             </p>
                         </div>
-                        <div className='w-full flex justify-center '>
+                        <div className='w-full flex justify-center font-light'>
                             <p>
                                 In the execution stage, we implement the plan by allocating resources, designing, developing solution, coding, testing, and
                                 integrating components. We maintain open communication for updates, feedback, and  address concerns promptly.
 
                             </p>
                         </div>
-                        <div className='w-full  flex justify-center'>
+                        <div className='w-full  flex justify-center font-light'>
                             <p>
                                 After execution, we enter delivery phase. Here, we finalize project deliverables, conduct rigorous testing and quality assurance to deploy solutions.
                                 The stage concludes with a successful handover, marking project completion.

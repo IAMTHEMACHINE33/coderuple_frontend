@@ -110,7 +110,7 @@ const Navbar = () => {
           id="navbarSupportedContent3"
           data-te-collapse-item
         >
-          <ul class="flex sm:gap-11 flex-col sm:flex-row" data-te-navbar-nav-ref>
+          <ul class="flex gap-6 md:gap-11 flex-col sm:flex-row" data-te-navbar-nav-ref>
             <p className="nav__links">
               <Link className=" underline" href="/home">
                 Home
@@ -119,7 +119,7 @@ const Navbar = () => {
             <p className="nav__links">
               <Link className=" underline" href="/about">
                 {/* <Link className=" underline" href={`/about`}> */}
-                About
+                About Us
               </Link>
             </p>
             <p className="nav__links">

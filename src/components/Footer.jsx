@@ -22,12 +22,12 @@ const Footer = () => {
             <input
               type="text"
               placeholder="Full Name"
-              className="py-1.5 px-4 rounded-full outline-none"
+              className="py-3 px-4 rounded-full outline-none"
             ></input>
             <input
               type="text"
               placeholder="Email"
-              className="py-1.5 px-4 rounded-full outline-none"
+              className="py-3 px-4 rounded-full outline-none"
             ></input>
             <textarea
               type="text"
@@ -37,7 +37,7 @@ const Footer = () => {
             <button
               type="submit"
               placeholder="Submit"
-              className=" bg-[#6096ba] py-1.5 px-4 rounded-3xl text-white  w-36 mt-4"
+              className=" bg-[#6096ba] py-3 px-4 rounded-3xl text-white text-xl  w-44 mt-4"
             >
               SUBMIT
             </button>

@@ -8,8 +8,10 @@ import Workingprocess from '@/components/Ourservices/Workingprocess';
 import Ourservices from '@/components/Ourservices/Ourservices';
 import Responsiveworkingprocess from '@/components/Ourservices/Responsiveworkingprocess';
 import mobile from '../../Images/mobile.svg' 
-import web from '../../Images/one.svg' 
-import ui from '../../Images/two.svg' 
+// import web from '../../Images/one.svg' 
+// import ui from '../../Images/two.svg' 
+import web  from '../../Images/webvideo.json'
+import ui  from '../../Images/uivideo.json'
 
 const index = () => {
     return (
@@ -27,7 +29,7 @@ const index = () => {
                     contenttwo={` We specialize in creating custom mobile solutions that are optimized for different platforms and devices, including iOS
                 and Android. Our team of experts stays up-to-date with the latest trends and technologies to ensure that your app is modern,
                 visually appealing, and user-friendly.`} 
-                image={mobile}
+                animationData={web}
                 />
                 <Ourservices reverse={true} heading={`Web Development`}
                     contentone={`At our company, we collaborate as a team to bring our clients' unique web application design ideas to life. 
@@ -35,7 +37,9 @@ const index = () => {
                     contenttwo={`Our team of experts has a deep understanding of the latest technologies and design trends to ensure that your website is modern, 
                     visually appealing, and user-friendly. We take pride in providing exceptional customer service, clear communication, and timely
                      delivery of projects to ensure your complete satisfaction.`}
-                     image={web}
+                    //  image={animation}
+              
+                     animationData={web}
 
                 />
                 <Ourservices heading={`UI/UX Designs`}
@@ -44,7 +48,7 @@ const index = () => {
                     contenttwo={`  Our team of skilled designers has extensive experience in creating user-friendly applications that provide a seamless user experience.
                     From wireframing to prototyping, we involve our clients in every step of the process to ensure that the end product exceeds their 
                     expectations.`}
-                    image={ui}
+                    animationData={ui}
 
                 />
                 <Workingprocess/>
