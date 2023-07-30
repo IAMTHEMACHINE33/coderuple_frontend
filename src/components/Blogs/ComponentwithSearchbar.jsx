@@ -16,21 +16,29 @@ const ComponentWithSearchbar = () => {
         <div className="relative responsive-container flex flex-col md:flex-row justify-start items-center md:items-start py-20 gap-20 ">
 
           <div className='md:w-1/2 flex flex-col gap-10'>
-            <BlogComponent heading={`Mobile Development`}
-              content={`Our passion and drive to deliver quality solutions have taken us to the boardroom of 200 yrs old company and coffee
-             shop meetings in Orlando, Washington, Singapore, Tokyo, Beijing and Kathmandu. We love the challenge to deliver the best possible 
-             solution using the latest and future technologies. `}
-              contenttwo={`We specialize in creating custom mobile solutions that are optimized for different platforms and devices, including iOS 
-             and Android. Our team of experts stays up-to-date with the latest trends and technologies to ensure that your app is modern, visually appealing, and user-friendly. `}
+            <BlogComponent 
+            id={`whowhat`}
+            heading={`Who/What are we?`}
+              content={`We are a team of highly skilled and passionate professionals dedicated to understanding the unique challenges and goals of our clients, allowing us to craft 
+              custom solutions that perfectly align with their visions. Our mission is to revolutionize the digital landscape of the market in web development, mobile development, 
+              and UI/UX designs by delivering cutting-edge solutions that not only meet our clients' needs but also exceed them, providing them with a competitive edge in the digital world. `}
+              contenttwo={`We strongly believe in the power of collaboration and work closely with our clients, fostering transparent and open communication throughout the entire development process. 
+              This collaborative approach enables us to build strong partnerships and deliver projects that not only meet technical requirements but also capture the essence of our clients' brands.
+              In a rapidly evolving digital landscape, Coderuple stands out as a trusted partner that delivers exceptional results. We are committed to staying ahead of the curve, leveraging 
+              the latest technologies and industry best practices to provide our clients with innovative solutions that drive their success. Choose Coderuple for your web development, mobile development, 
+              and UI/UX design needs, and experience the difference firsthand.
+               `}
              image={mobile}
             />
-            <BlogComponent heading={`Web Development`}
-              content={`Our passion and drive to deliver quality solutions have taken us to the boardroom of 200 yrs old company and coffee 
-            shop meetings in Orlando, Washington, Singapore, Tokyo, Beijing and Kathmandu. We love the challenge to deliver the best possible 
-            solution using the latest and future technologies. `}
-              contenttwo={`Our team of experts has a deep understanding of the latest technologies and design trends to ensure that your website 
-            is modern, visually appealing, and user-friendly. We take pride in providing exceptional customer service, clear communication, and 
-            timely delivery of projects to ensure your complete satisfaction. `} 
+            <BlogComponent heading={`How are we different? `}
+                        id={`how`}
+
+              content={`Our company sets itself apart from the market with our unwavering focus on user-centric design. While many companies may prioritize functionality and aesthetics, we go beyond that by
+               placing the end-user at the center of our design process. We conduct extensive research and user testing to gain deep insights into user behavior, preferences, and pain points. This enables
+                us to create intuitive and seamless experiences that truly resonate with the target audience.`}
+              contenttwo={`Additionally, our commitment to continuous improvement sets us apart. We understand that technology and design trends are constantly evolving, and we embrace this change wholeheartedly.
+               Our team stays up-to-date with the latest industry advancements, attending conferences, workshops, and actively engaging in professional development. By consistently refining our skills and staying
+                ahead of the curve, we are able to offer our clients cutting-edge solutions that surpass industry standards and deliver exceptional results. `} 
             image={web}
             />
           </div>
@@ -45,21 +53,21 @@ const ComponentWithSearchbar = () => {
               <div className='lg:w-1/3'>
               <Image src={cardmobile} className="h-60 w-auto md:h-28 md:w-32 rounded-2xl bg-white" alt='image'/>
                 </div>
-                <div className="flex flex-col lg:w-2/3">
-                  <p>Our passion and drive to deliver quality solutions have taken us to the boardroom of a 200-year-old company</p>
+                <a href='#whowhat' className="flex flex-col lg:w-2/3">
+                  <p>We are a team of highly skilled and passionate professionals dedicated to understanding the unique challenges...</p>
                   <span className="font-semibold"><li>January 21, 2021</li></span>
-                </div>
+                </a>
               </div>
               <div className="flex flex-col lg:flex-row gap-2">
               <div className='lg:w-1/3'>
               <Image src={cardweb} className=" h-60 w-auto md:h-28 md:w-32 rounded-2xl bg-white"alt='image' />
                 </div>
-                <div className="flex flex-col lg:w-2/3">
-                  <p>Our passion and drive to deliver quality solutions have taken us to the boardroom of a 200-year-old company</p>
+                <a href='#how' className="flex flex-col lg:w-2/3">
+                  <p>Our company sets itself apart from the market with our unwavering focus on user-centric design. While many...</p>
                   <span className="font-semibold"><li>January 21, 2021</li></span>
-                </div>
+                </a>
               </div>
-              <div className="flex flex-col lg:flex-row gap-2">
+              {/* <div className="flex flex-col lg:flex-row gap-2">
                 <div className='lg:w-1/3'>
                 <Image src={cardui} className="h-60 w-auto md:h-28 md:w-32 rounded-2xl bg-white"alt='image' />
                 </div>
@@ -67,7 +75,7 @@ const ComponentWithSearchbar = () => {
                   <p>Our passion and drive to deliver quality solutions have taken us to the boardroom of a 200-year-old company</p>
                   <span className="font-semibold"><li>January 21, 2021</li></span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

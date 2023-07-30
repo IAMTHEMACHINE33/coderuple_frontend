@@ -6,7 +6,7 @@ const BlogComponent = (props) => {
     const [state, setState] = useState(false);
 
     return (
-        <div className="flex flex-col gap-12 px-5">
+        <div id={props.id} className="flex flex-col gap-12 px-5">
             <h1 className="capitalize text-3xl sm:text-5xl font-medium">{props.heading}</h1>
             <div className="flex flex-col gap-5">
                 <Image src={props.image} className="h-60 w-auto rounded-2xl bg-white" alt='image' />

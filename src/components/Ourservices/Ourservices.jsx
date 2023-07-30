@@ -10,7 +10,7 @@ const Ourservices = (props) => {
     const animation = Lottie.loadAnimation({
       container: animationContainerRef.current,
       renderer: 'svg', // Use 'canvas' for better performance if needed
-      loop: true,
+      loop: false,
       autoplay: true,
       animationData: props.animationData,
     });
