@@ -5,6 +5,10 @@ import Testimonials from "@/components/Home/Testimonial";
 import Services from "@/components/Home/Services";
 import Content from "@/components/Home/Whyus";
 import Aboutushome from "@/components/Home/Aboutushome";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+
+if(process.env.NODE_ENV === 'production') disableReactDevTools();
+
 export default function Home() {
   return (
     <>
