@@ -5,6 +5,7 @@ import mobile from '../../Images/mobile.svg'
 // import ui from '../../Images/two.svg'
 import web from '../../Images/webvideo.json'
 import ui from '../../Images/uivideo.json'
+import Link from 'next/link'
 const Whatwedo = () => {
   return (
     <div className='relative flex justify-center bg-[#FFFFFF]'>
@@ -15,7 +16,7 @@ const Whatwedo = () => {
             Let us change the way you think about technology
           </h1>
         </div>
-        <div className='flex flex-col lg:flex-row justify-between gap-6'>
+        <Link href='/services' className='flex flex-col lg:flex-row justify-between gap-6 hover:cursor-pointer'>
 
           <Cardwhatwedo heading={"Web development"}
             Content={`Our team works closely with clients to transform their ideas into user-friendly mobile applications that are just a tap away.
@@ -32,7 +33,7 @@ const Whatwedo = () => {
           has extensive experience in creating user-friendly applications that provide a seamless user experience and meets their expectations.`}
             animationData={ui}
           />
-        </div>
+        </Link>
       </div>
     </div>
   )

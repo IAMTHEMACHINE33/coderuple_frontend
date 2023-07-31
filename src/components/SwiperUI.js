@@ -41,11 +41,11 @@ const SwiperUI = () => {
               </h1>
               <h2 className="text-2xl sm:text-5xl font-light px-2">
                 Where your digital needs come to life!              </h2>
-              <p className="lg:w-1/2 text-3xl  sm:text-lg font-extralight px-3">
+              <p className="lg:w-1/2 text-3xl  sm:text-lg font-extralight px-2">
                 We deliver high-quality products and services ensuring all our customers are satisfied.
               </p>
             </div>
-            <button className="rounded-full bg-[#6096BA] p-3 sm:w-1/5 w-1/3 mx-4">
+            <button className="rounded-full bg-[#6096BA] p-3 sm:w-1/5 w-1/3 mx-2">
               Read More
             </button>
           </div>
