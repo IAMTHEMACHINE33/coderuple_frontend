@@ -2,9 +2,10 @@
   "name": "coderuple_frontend",
   "version": "0.1.0",
   "private": true,
+
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build:production": "next build",
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
