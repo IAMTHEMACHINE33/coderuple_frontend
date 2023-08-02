@@ -11,7 +11,7 @@ const Testimonials = () => {
       <div className="relative flex justify-center my-20">
         <div className="flex flex-col gap-10 responsive-container">
           <div>
-            <h1 className="capitalize text-5xl font-medium text-left">
+            <h1 className="capitalize text-4xl text-center sm:text-5xl font-medium sm:text-left">
               Ask our clients
             </h1>
           </div>
@@ -42,7 +42,7 @@ const Testimonials = () => {
                   <div className="rounded-full border-2 w-40 h-40 ">
                     <Image src={logo} className="  " alt="testimonial.jpg" />
                   </div>
-                  <p className="leading-tight w-1/2 sm:w-auto  font-light">
+                  <p className="leading-tight w-full sm:w-auto font-light">
                     We design experiences that are personalized to your users
                     context and motivations. We use design thinking and it leads
                     to design that

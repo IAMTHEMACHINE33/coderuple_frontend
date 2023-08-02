@@ -1,10 +1,8 @@
 import React from 'react'
 import Cardwhatwedo from './Cardwhatwedo'
-import mobile from '../../Images/mobile.svg'
-// import web from '../../Images/one.svg'
-// import ui from '../../Images/two.svg'
-import web from '../../Images/webvideo.json'
-import ui from '../../Images/uivideo.json'
+import mobile from '../../Images/mobiledev.svg'
+import web  from '../../Images/web.svg'
+import ui  from '../../Images/ui.svg'
 import Link from 'next/link'
 const Whatwedo = () => {
   return (
@@ -21,7 +19,7 @@ const Whatwedo = () => {
           <Cardwhatwedo heading={"Web development"}
             Content={`Our team works closely with clients to transform their ideas into user-friendly mobile applications that are just a tap away.
            By collaborating as a group, we ensure that every project meets our clients' needs and exceeds their expectations.`}
-            animationData={web}
+            animationData={mobile}
           />
           <Cardwhatwedo heading={"Mobile development"}
             Content={`At our company, we collaborate as a team to bring our clients unique web application design ideas to life with creativity and

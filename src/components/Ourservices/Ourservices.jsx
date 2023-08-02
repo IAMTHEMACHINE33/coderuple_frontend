@@ -1,45 +1,45 @@
+import Image from 'next/image';
 import React, { useEffect } from 'react';
-import Lottie from 'lottie-web';
-import Company from '../../Images/company.jpg';
-import ScrollTrigger from 'react-scroll-trigger';
+// import Lottie from 'lottie-web';
+// import ScrollTrigger from 'react-scroll-trigger';
 
 const Ourservices = (props) => {
-  const animationContainerRef = React.createRef();
-  let animation = null;
+  // const animationContainerRef = React.createRef();
+  // let animation = null;
 
-  useEffect(() => {
-    // Create the animation using Lottie
-    animation = Lottie.loadAnimation({
-      container: animationContainerRef.current,
-      renderer: 'svg', // Use 'canvas' for better performance if needed
-      loop: false,
-      autoplay: true, // We set autoplay to false because we want to control the play manually
-      animationData: props.animationData,
-    });
+  // useEffect(() => {
+  //   // Create the animation using Lottie
+  //   animation = Lottie.loadAnimation({
+  //     container: animationContainerRef.current,
+  //     renderer: 'svg', // Use 'canvas' for better performance if needed
+  //     loop: false,
+  //     autoplay: true, // We set autoplay to false because we want to control the play manually
+  //     animationData: props.animationData,
+  //   });
 
-    // Cleanup animation when component unmounts
-    return () => {
-      if (animation) {
-        animation.destroy();
-      }
-    };
-  }, [props.animationData]);
+  //   // Cleanup animation when component unmounts
+  //   return () => {
+  //     if (animation) {
+  //       animation.destroy();
+  //     }
+  //   };
+  // }, [props.animationData]);
 
-  const handleEnterViewport = () => {
-    if (animation) {
-      animation.play();
-    }
-  };
+  // const handleEnterViewport = () => {
+  //   if (animation) {
+  //     animation.play();
+  //   }
+  // };
 
-  const handleExitViewport = () => {
-    if (animation) {
-      animation.stop();
-    }
-  };
+  // const handleExitViewport = () => {
+  //   if (animation) {
+  //     animation.stop();
+  //   }
+  // };
 
   return (
     <>
-      <ScrollTrigger onEnter={handleEnterViewport} onExit={handleExitViewport}>
+      {/* <ScrollTrigger onEnter={handleEnterViewport} onExit={handleExitViewport}> */}
 
         <div
           className={`relative ${props.reverse ? 'bg-[#FFFFFF]' : 'bg-[#D9D9D9]'
@@ -67,14 +67,16 @@ const Ourservices = (props) => {
               </div>
             </div>
             <div className='flex justify-center pb-5 md:pb-0 items-center w-[80%] md:w-1/2'>
-              <div
+            <Image src={props.animationData} className='rounded-3xl lg:h-[350px] bg-white w-full' alt="image"></Image>
+
+              {/* <div
                 ref={animationContainerRef}
                 className='rounded-3xl lg:h-[350px] bg-white w-full'
-              />
+              /> */}
             </div>
           </div>
         </div>
-      </ScrollTrigger>
+      {/* </ScrollTrigger> */}
 
     </>
   );

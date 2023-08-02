@@ -1,5 +1,8 @@
 import Image from "next/image";
-import logo from "@/Images/logo.png";
+import logo from "@/Images/logowhite.png";
+import logo2 from "@/Images/logocheck.png";
+// import logo from "@/Images/logo.png";
+
 import menu from "../SVG/menu.svg";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -30,7 +33,7 @@ const Navbar = () => {
   //logo scroll function
   const changeLogo = () => {
     if (window.scrollY >= 60) {
-      setNavbarLogo(logo);
+      setNavbarLogo(logo2);
     } else {
       setNavbarLogo(logo);
     }
@@ -76,8 +79,8 @@ const Navbar = () => {
     >
       <div class="flex responsive-container flex-wrap items-center justify-between ">
         <span className="font-semibold text-lg flex items-center gap-2 h-full py-4">
-          <Image src={logo} height={30} alt="image" />
-          CODERUPLE
+          <Image src={navbarLogo} height={20} alt="image" className=" p-2 text-white" />
+          {/* CODERUPLE */}
         </span>
 
         <button

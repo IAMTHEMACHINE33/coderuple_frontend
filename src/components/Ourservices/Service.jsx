@@ -1,7 +1,8 @@
 import React from 'react'
 import Ourservices from './Ourservices'
-import web  from '../../Images/webvideo.json'
-import ui  from '../../Images/uivideo.json'
+import mobile from '../../Images/mobiledev.svg'
+import web  from '../../Images/web.svg'
+import ui  from '../../Images/ui.svg'
 const Service = () => {
   return (
     <>
@@ -12,7 +13,7 @@ needs and exceeds their expectations.`}
     contenttwo={` We specialize in creating custom mobile solutions that are optimized for different platforms and devices, including iOS
 and Android. Our team of experts stays up-to-date with the latest trends and technologies to ensure that your app is modern,
 visually appealing, and user-friendly.`} 
-animationData={web}
+animationData={mobile}
 />
 <Ourservices reverse={true} heading={`Web Development`}
     contentone={`At our company, we collaborate as a team to bring our clients' unique web application design ideas to life. 

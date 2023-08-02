@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Company from '../Images/company.jpg'
 const Imagepara = (props) => {
     return (
-        <div className={`relative  bg-[#D9D9D9]   flex items-center flex-col md:gap-8 ${props.reverse ? 'md:pb-20' : 'md:pt-20 md:pb-10'}`}>
+        <div className={`relative  bg-[#D9D9D9]   flex items-center flex-col pt-5 md:gap-8  ${props.reverse ? 'md:pb-20' : 'md:pt-20 md:pb-10'}`}>
             <div className={`responsive-container flex flex-col md:${props.reverse ? 'flex-row-reverse' : 'flex-row'} gap-5 md:gap-20  `}>
                 <div className={` flex flex-col   ${props.reverse ? 'text-left gap-0 flex justify-center ' : 'text-left gap-10'} md:w-1/2 `}>
                     <div className={`flex flex-col  ${props.reverse ? ' gap-0 ' : ' gap-3'}`}>
