@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --blue: #6096ba;
+  --text_blue: #112a46;
+  --dark_gray: #1e1e1e;
+}
+.footer-container {
+  background-color: #21394c;
+  width: 100%;
+}
+
+.copyright_container {
+  background-color: #0c161d;
+}
+.services_container {
+  background-color: #d9d9d9;
+}
+
+/* ============================================= Fonts added ============================================= */
+
+body {
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  /* font-family: 'Open Sans'; */
+  /* font-family: AdobeClean; */
+  font-family: "Poppins", sans-serif;
+}
+
+/* @font-face {
+    font-family: AdobeClean;
+    src: url('./AdobeClean-Light.otf');
+} */
+
+.responsive-container {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .responsive-container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 840px) {
+  .responsive-container {
+    width: 810px;
+  }
+}
+
+@media (min-width: 992px) {
+  .responsive-container {
+    width: 940px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-container {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 1370) {
+  .responsive-container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  .responsive-container {
+    width: 1300px;
+  }
+}
+
+.Gear {
+  animation: rotate 9s infinite;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  color: var(--dark_gray);
+}
+
+:root {
+  --swiper-navigation-color: #b4b4b4;
+  /* --swiper-navigation-size: 120px !important; */
+}
+
+.swiper-button-prev {
+  left: 2rem !important;
+}
+
+.swiper-button-next {
+  right: 2rem !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
