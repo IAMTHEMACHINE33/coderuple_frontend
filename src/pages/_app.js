@@ -3,6 +3,8 @@ import "../styles/globals.css";
 import "../styles/navbar.css";
 import "../styles/testimonial.scss";
 import "../styles/homepage.css";
+import Head from 'next/head';
+import favicon from '../Images/favicon.ico'
 // import { Open_Sans } from '@next/font/google'
 import { useEffect } from "react";
 import { SessionProvider } from "next-auth/react";
@@ -24,6 +26,9 @@ export default function App({
 
   return (
     <SessionProvider session={session}>
+    <Head>
+      <link rel="shortcut icon" href={favicon.src} />
+    </Head>
       <main
       // className={open_sans.className}
       >
