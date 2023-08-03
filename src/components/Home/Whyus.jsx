@@ -1,9 +1,9 @@
 import React from 'react'
 import Cardwhyus from './Cardwhyus'
-import innovation from '../../Images/cardui.svg'
-import customer from '../../Images/deliver.svg'
-import team from '../../Images/plan.svg'
-import quality from '../../Images/cardmobile.svg'
+import innovation from '../../Images/inovation.svg'
+import customer from '../../Images/customer service.svg'
+import team from '../../Images/professional team.svg'
+import quality from '../../Images/quality assurance.svg'
 
 const Content = () => {
   return (

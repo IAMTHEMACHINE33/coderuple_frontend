@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import company from '../../Images/company.jpg'
-import about from '../../Images/about.svg'
+import about from '../../Images/about us(home pagelanding page).svg'
 import Link from 'next/link'
 const Aboutushome = () => {
     return (
