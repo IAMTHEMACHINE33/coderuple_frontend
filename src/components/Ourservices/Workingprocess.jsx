@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import discover from '../../Images/discover.svg'
-import plan from '../../Images/plan.svg'
+import discover from '../../Images/discovery.svg'
+import plan from '../../Images/planning.svg'
 import execute from '../../Images/execute.svg'
-import deliver from '../../Images/deliver.svg'
+import deliver from '../../Images/delivery.svg'
 const Workingprocess = (props) => {
     return (
         <>

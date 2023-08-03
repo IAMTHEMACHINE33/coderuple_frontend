@@ -46,29 +46,7 @@ const Navbar = () => {
   });
 
   return (
-    // <nav className={navbar ? "navbar__container navbar__container__sticky" : "navbar__container navbar__container__absolute"}>
-    //   <div className="responsive-container flex justify-between items-center ">
-    //     <span className="font-semibold text-lg flex items-center gap-2 h-full py-4">
-    //       <Image src={logo} height={30} />
-    //       CODERUPLE
-    //     </span>
-    //     <Image src={menu} className="sm:hidden" />
-    //     <div className="gap-4 hidden sm:flex">
-    //       <span className="nav__links">Home</span>
-    //       <div class="popover__wrapper">
-    //         <a href="#">
-    //           <h2 class="popover__title nav__links">Our Services</h2>
-    //         </a>
-    //         <div class="popover__content">
-    //           <p class="popover__message">cHECHK</p>
-    //         </div>
-    //       </div>
-    //       <span className="nav__links">Our Works</span>
-    //       <span className="nav__links">Contact Us</span>
-    //       <span className="nav__links">Careers</span>
-    //     </div>
-    //   </div>
-    // </nav>
+
     <nav
       className={
         navbar
@@ -78,8 +56,14 @@ const Navbar = () => {
       data-te-navbar-ref
     >
       <div class="flex responsive-container flex-wrap items-center justify-between ">
-        <span className="font-semibold text-lg flex items-center gap-2 h-full py-4">
-          <Image src={navbarLogo} height={20} alt="image" className=" p-2 text-white" />
+        <span className="font-semibold text-lg  items-center gap-2 h-full py-4 hidden sm:flex ">
+          <Image src={navbarLogo} height={18} alt="image" className=" p-2 text-white" />
+
+          {/* CODERUPLE */}
+        </span>
+        <span className="font-semibold text-lg flex items-center gap-2 h-full py-4 sm:hidden">
+          <Image src={logo2} height={18} alt="image" className=" p-2 text-white" />
+          
           {/* CODERUPLE */}
         </span>
 
@@ -113,7 +97,7 @@ const Navbar = () => {
           id="navbarSupportedContent3"
           data-te-collapse-item
         >
-          <ul class="flex gap-6 md:gap-11 flex-col sm:flex-row" data-te-navbar-nav-ref>
+          <ul class="flex sm:gap-4 md:gap-7 lg:gap-11 flex-col sm:flex-row" data-te-navbar-nav-ref>
             <p className="nav__links">
               <Link className=" underline" href="/home">
                 Home

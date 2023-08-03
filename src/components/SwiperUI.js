@@ -30,12 +30,12 @@ const SwiperUI = () => {
       />
 
       <SwiperSlide>
-        <div className="justify-center flex h-screen ">
+        <div className=" sm:justify-center flex h-screen ">
           <div
-            className=" flex flex-col  gap-8  items-center sm:items-start text-center sm:text-start  responsive-container absolute top-[25%] lg:top-[39%] text-white"
+            className=" flex flex-col  gap-4 sm:gap-8  items-center sm:items-start text-center sm:text-start  responsive-container absolute top-[25%] lg:top-[39%] text-white"
             data-swiper-parallax="-300"
           >
-            <div className="flex flex-col gap-7 items-center sm:items-start ">
+            <div className="flex flex-col gap-3 sm:gap-7 items-center sm:items-start ">
               <h1 className="text-4xl sm:text-7xl font-semibold">
                 Welcome to Coderuple,
               </h1>
@@ -45,7 +45,7 @@ const SwiperUI = () => {
                 We deliver high-quality products and services ensuring all our customers are satisfied.
               </p>
             </div>
-            <button className="rounded-full bg-[#6096BA] p-3 sm:w-1/5 w-1/3 mx-2">
+            <button className="rounded-full bg-[#6096BA] p-3 sm:w-1/5 mx-2">
               Read More
             </button>
           </div>

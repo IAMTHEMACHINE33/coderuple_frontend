@@ -67,7 +67,7 @@ const Ourservices = (props) => {
               </div>
             </div>
             <div className='flex justify-center pb-5 md:pb-0 items-center w-[80%] md:w-1/2'>
-            <Image src={props.animationData} className='rounded-3xl lg:h-[350px] bg-white w-full' alt="image"></Image>
+            <Image src={props.animationData} className='rounded-3xl lg:h-[350px]  w-full' alt="image"></Image>
 
               {/* <div
                 ref={animationContainerRef}

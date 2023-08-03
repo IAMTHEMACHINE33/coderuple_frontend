@@ -46,7 +46,7 @@ const Cardservice = (props) => {
             props.reverse == true ? 'sm:flex-row' : 'sm:flex-row-reverse'
           }`}
         >
-          <Image src={props.animationData} className='h-52 w-auto md:w-full rounded-md bg-white' alt="image"></Image>
+          <Image src={props.animationData} className='h-52 w-auto md:w-full rounded-md ' alt="image"></Image>
           {/* <div ref={animationContainerRef} className='rounded-md h-52 w-auto bg-white sm:w-full' /> */}
           <div className='flex flex-col justify-center '>
             <h4 className='capitalize text-2xl font-normal text-center pb-3'>{props.heading}</h4>
