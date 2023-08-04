@@ -35,7 +35,7 @@ const Responsiveworkingprocess = () => {
 
 
                     </div>
-                    <div className='flex w-full  pt-4'>
+                    <div className='flex w-full '>
                         <div className='w-1/4 flex justify-end items-center'>
                             <div className='bg-[#D9D9D9] h-12 w-12 rounded-full flex justify-center items-center '>
                                 <span className='bg-[#E7E7E7]  h-10 w-10 rounded-full flex justify-center items-center font-bold text-2xl'>1</span>
