@@ -41,7 +41,7 @@ const Cardwhatwedo = (props) => {
         
         <div className='flex flex-col lg:flex-row flex-wrap justify-center gap-10 lg:w-[30%] w-full'>
             {/* <ScrollTrigger onEnter={handleEnterViewport} onExit={handleExitViewport}> */}
-            <div className={` w-full  flex flex-col  lg:flex-col justify-center items-center gap-3 hover:shadow-lg rounded-2xl bg-[#CDCDCD] hover:bg-[#bebebe] `}>
+            <div className={` w-full  flex flex-col  lg:flex-col justify-center items-center gap-3 hover:shadow-lg rounded-2xl bg-[#CBCBCB] hover:bg-[#bebebe] `}>
                 <h4 className='capitalize text-2xl font-normal text-center pt-7'>{props.heading}</h4>
                 <div className='flex flex-col justify-center '>
                     <Image src={props.animationData} className='h-52 w-auto md:w-full rounded-md ' alt="image"></Image>
