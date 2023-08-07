@@ -54,7 +54,8 @@ const ComponentWithSearchbar = () => {
               <Image src={cardmobile} className="h-60 w-auto md:h-28 md:w-32 rounded-2xl bg-white" alt='image'/>
                 </div>
                 <a href='#whowhat' className="flex flex-col lg:w-2/3">
-                  <p>We are a team of highly skilled and passionate professionals dedicated to understanding the unique challenges...</p>
+                  <h3 className='font-semibold text-lg'>Who/What are we?</h3>
+                  <p className='font-light'>We are a team of highly skilled and passionate professionals dedicated...</p>
                   <span className="font-semibold"><li>January 21, 2021</li></span>
                 </a>
               </div>
@@ -63,7 +64,9 @@ const ComponentWithSearchbar = () => {
               <Image src={cardweb} className=" h-60 w-auto md:h-28 md:w-32 rounded-2xl bg-white"alt='image' />
                 </div>
                 <a href='#how' className="flex flex-col lg:w-2/3">
-                  <p>Our company sets itself apart from the market with our unwavering focus on user-centric design. While many...</p>
+                <h3 className='font-semibold text-lg'>How are we different??</h3>
+
+                  <p className='font-light'>Our company sets itself apart from the market with our unwavering focus...</p>
                   <span className="font-semibold"><li>January 21, 2021</li></span>
                 </a>
               </div>

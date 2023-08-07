@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar";
 import Banner from "@/components/Banner";
 import Imagepara from "@/components/Imagepara";
 import Whatwedo from "@/components/About/Whatwedo";
-import aboutusleft from '../../Images/about us(left side).svg'
-import aboutusright from '../../Images/about us(right side).svg'
+import aboutusright from '../../Images/about us(left side).svg'
+import aboutusleft from '../../Images/about us(right side).svg'
 
 import Footer from "@/components/Footer";
 const About = () => {
